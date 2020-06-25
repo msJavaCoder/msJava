@@ -9,9 +9,20 @@ import java.util.HashMap;
  * @createDate: 2020/6/18
  * @version: 1.0
  */
-public abstract class Main {
+public class Main {
 
 
+    public static int sum(int a,int b){
+        return a+b;
+    }
+
+    public static void main(String[] args) {
+
+        int a=3;
+        int b=2;
+        System.out.println(a+=a*sum(a,b)*b);
+
+    }
 
 
 }
