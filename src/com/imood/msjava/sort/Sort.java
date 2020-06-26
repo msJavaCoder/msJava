@@ -1,9 +1,9 @@
-package com.imood.sort;
+package com.imood.msjava.sort;
 
 
 
 /**
- * @description:
+ * @description:  常見排序算法
  * @author: 微信公众号：码上Java
  * @createDate: 2020/6/21/0021
  * @version: 1.0

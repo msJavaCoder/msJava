@@ -1,14 +1,14 @@
-package com.imood;
+package com.imood.msjava.牛客;
 
 import java.util.Scanner;
 
 /**
  * @description:
  * @author: 微信公众号：码上Java
- * @createDate: 2020/6/18
+ * @createDate: 2020/6/26/0026
  * @version: 1.0
  */
-public class Main {
+public class BalanceNum {
 
     public static boolean balanceNum(int n){
         String str = String.valueOf(n);
