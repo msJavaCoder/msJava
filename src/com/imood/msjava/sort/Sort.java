@@ -15,7 +15,7 @@ public class Sort{
      * @param array
      * @return
      */
-    public static int[] bubbleSort(int[] array){
+    public static void bubbleSort(int[] array){
         //外循环控制循环比较次数
         for (int i = 1; i < array.length; i++) {
             //内循环控制比较元素，针对待排序元素
@@ -28,8 +28,37 @@ public class Sort{
                 }
             }
         }
-        return array;
     }
+
+    /**
+     * 冒泡排序算法优化 时间复杂度 N2 空间复杂度 1 稳定
+     * 在第一层循环内加一个判断标识，每次赋值为 true，
+     * 假如在第二层循环（内层循环）时执行了位置交换，也就是 if 中的代码之后，
+     * 我们把此值设置成 false；如果执行完内层循环判断之后，变量依然为 true，
+     * 这就说明没有可以移动的元素了，冒泡排序可以结束执行了
+     * @param array
+     */
+    public static void bubbleSortPLus(int[] array){
+        //外循环控制循环比较次数
+        for (int i = 1; i < array.length; i++) {
+
+            boolean flag=true;
+            //内循环控制比较元素，针对待排序元素
+            for (int j = 0; j < array.length-i; j++) {
+                if(array[j]>array[j+1]){
+                    //元素交换位置
+                    int temp=array[j];
+                    array[j]=array[j+1];
+                    array[j+1]=temp;
+                    flag=false;
+                }
+                if(flag){
+                    break;
+                }
+            }
+        }
+    }
+
 
     /**
      * 插入排序算法 时间复杂度 N ~ N2 （时间复杂度与初始排序状态有关） 空间复杂度 1 稳定
