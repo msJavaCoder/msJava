@@ -39,3 +39,9 @@ static final int MIN_TREEIFY_CAPACITY =64
 > 而当加载因子值比较小的时候，扩容的门槛会比较低，因此会占用更多的空间，此时元素的存储就比较稀疏，发生哈希冲突的可能性就比较小，因此操作性能会比较高。
 > 所以综合了以上情况就取了一个 0.5 到 1.0 的平均数 0.75 作为加载因子。
 
+HashMap 新增方法流程如下：
+
+<img src="https://s0.lgstatic.com/i/image3/M01/73/D9/CgpOIF5rDYmATP43AAB3coc0R64799.png" alt="img"  />
+
+
+

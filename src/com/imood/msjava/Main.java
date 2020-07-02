@@ -1,26 +1,44 @@
 package com.imood.msjava;
 
-import java.util.*;
+
+import java.util.Scanner;
 
 /**
- * @description:
- * @author: 微信公众号：码上Java
- * @createDate: 2020/6/18
+ * @description:  三次反转实现字符串循环右边移动N位
+ * @author: msJava
+ * @createDate: 2020/07/02
  * @version: 1.0
  */
-
 public class Main {
 
-    public static void main(String args[]){
-
-         Map<Integer,Integer> map=new HashMap<>();
-         map.put(1,2);
-         map.put(2,3);
-         map.put(3,4);
-         map.put(4,5);
-        for (Integer key:map.keySet()) {
-            System.out.println(key+" : "+ map.get(key));
+    /**
+     * 交换位置
+     * @param chars
+     * @param begin
+     * @param end
+     */
+    public  void swap(char[] chars, int begin, int end){
+            while(begin < end){
+                char temp = chars[begin];
+                chars[begin] = chars[end];
+                chars[end] = temp;
+                begin++;
+                end--;
+            }
+        }
+        public String moveString(String str, int n){
+            char[] chars = str.toCharArray();
+            swap(chars, 0, chars.length - 1);
+            swap(chars, 0, n-1);
+            swap(chars, n, chars.length - 1);
+            return new String(chars);
+        }
+        public static void main(String[] args) {
+            Scanner input=new Scanner(System.in);
+            String str = input.nextLine();
+            //移动位数
+            int N = input.nextInt();
+            System.out.println(new Main().moveString(str,N));
         }
 
-    }
 }
