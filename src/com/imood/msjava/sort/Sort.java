@@ -148,7 +148,7 @@ public class Sort{
                 high--;
             }
             array[low]=array[high];
-            //从lowk开始，如果low小于pivot, low++ ,否则 low 的值直接赋值给 high
+            //从low开始，如果low小于pivot, low++ ,否则 low 的值直接赋值给 high
             while ((low<high) && array[low]<=pivot){
                 low++;
             }
