@@ -61,7 +61,7 @@
 - [后端开发必备Linux基础命令总结](https://github.com/msJavaCoder/msJava/blob/master/Linux/后端开发必备Linux基础命令总结.md)
 
 ### 📰 数据结构与算法
-- [排序算法汇总](https://github.com/msJavaCoder/msJava/blob/master/数据结构与算法/排序算法汇总.md)
+- [排序算法汇总](https://github.com/msJavaCoder/msJava/blob/master/算法/排序算法汇总.md)
 - .....
 ### 🌈 面试题
 - [Java基础面试题](https://github.com/msJavaCoder/msJava/blob/master/面试题/Java基础面试题.md)
