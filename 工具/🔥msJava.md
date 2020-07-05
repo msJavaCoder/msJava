@@ -33,6 +33,8 @@
 - [Java运行时内存划分](https://github.com/msJavaCoder/msJava/blob/master/JVM/Java运行时内存划分.md)
 - [类加载机制](https://github.com/msJavaCoder/msJava/blob/master/JVM/类加载机制.md)
 - [垃圾回收器](https://github.com/msJavaCoder/msJava/blob/master/JVM/垃圾回收器.md)
+- [垃圾回收算法](https://github.com/msJavaCoder/msJava/blob/master/JVM/垃圾回收器算法.md)
+- [JVM确认可回收对象的方式](https://github.com/msJavaCoder/msJava/blob/master/JVM/JVM确认可回收对象的方式.md)
 - [Java内存模型](https://github.com/msJavaCoder/msJava/blob/master/JVM/JVM内存模型.md)
 - .....
 
