@@ -6,19 +6,19 @@
 | ------------------------------------------------------------ | -------------------------------------------------- | ------------------------------------------------------ | ---------------------------------------------- | ------------------------------------------------ | ------------------------------------------------------------ | -------------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------ | ------------------------------------------------------------ | ---------------------------------------------------- | ---------------------------------------------------- | ------------------------------------------------------ | ---------------------------------------------------------- |
 | [Java核心基础](https://github.com/msJavaCoder/msJava#java核心基础) | [集合](https://github.com/msJavaCoder/msJava#集合) | [多线程](https://github.com/msJavaCoder/msJava#多线程) | [IO](https://github.com/msJavaCoder/msJava#IO) | [JVM](https://github.com/msJavaCoder/msJava#JVM) | [设计模式](https://github.com/msJavaCoder/msJava#设计模式) | [框架](https://github.com/msJavaCoder/msJava#框架) | [数据结构与算法](https://github.com/msJavaCoder/msJava#数据结构与算法) | [数据库](https://github.com/msJavaCoder/msJava#数据库) | [算法](https://github.com/msJavaCoder/msJava#数据结构与算法) | [Redis](https://github.com/msJavaCoder/msJava#Redis) | [Linux](https://github.com/msJavaCoder/msJava#Linux) | [面试题](https://github.com/msJavaCoder/msJava#面试题) | [联系作者](https://github.com/msJavaCoder/msJava#联系作者) |
 
-### Java核心基础
+### ♨Java核心基础
 
-### 集合
+### ⭕集合
 
 - ArrayList
 - LinkedList
 - HashMap
 
-### 多线程
+### 🔐多线程
 
-### IO
+### 💈IO
 
-### JVM
+### 💻JVM
 
 - Java 运行时内存划分
 - 类加载机制
@@ -26,20 +26,20 @@
 - Java内存模型
 - 对象的创建与分配
 
-### 设计模式
+### 🚏设计模式
 
-### 框架
+### 🏖框架
 
-### 数据库
+### 📰数据库
 
-### Redis
+### 🗽Redis
 
-### Linux
+### 🚀Linux
 
-### 数据结构与算法
+### 📰数据结构与算法
 
-### 面试题
+### 🌈面试题
 
-### 联系作者
+### ☎联系作者
 
 > 关注微信订阅号： 码上Java  🔥🔥🔥
