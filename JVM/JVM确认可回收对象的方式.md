@@ -8,11 +8,10 @@
 
 以一系列GC ROOTS的点作为起点向下搜索，当一个对象到任何GC ROOTS都没有引用链相连时，说明该对象可以回收。
 
-![img](https://s0.lgstatic.com/i/image/M00/14/70/Ciqc1F7Q3giAKu5UAAClt3UMheE300.png)
+在 Java 中可以作为 **CG Roots 的对象**，主要包含以下几个：
 
-在 Java 中可以作为 CG Roots 的对象，主要包含以下几个：
-所有被同步锁持有的对象，比如被 synchronize 持有的对象；
-字符串常量池里的引用（String Table）；
-类型为引用类型的静态变量；
-虚拟机栈中引用对象；
-本地方法栈中的引用对象。
+1. 所有被同步锁持有的对象，比如被 synchronize 持有的对象；
+2. 字符串常量池里的引用（String Table）；
+3. 类型为引用类型的静态变量；
+4. 虚拟机栈中引用对象；
+5. 本地方法栈中的引用对象。
