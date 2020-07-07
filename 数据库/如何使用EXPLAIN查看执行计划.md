@@ -4,11 +4,24 @@
 explain select * from tb_blog
 ```
 
-![image-20200704162403732](C:\Users\孙白胖的爸爸\AppData\Roaming\Typora\typora-user-images\image-20200704162403732.png)
+查看结果如下：
+
+|  id  | select_type |  table  | type | possible_keys | key  | ken_len | ref  | rows | Extra |
+| :--: | :---------: | :-----: | ---- | :-----------: | :--: | :-----: | :--: | :--: | :---: |
+|  1   |   SIMPLE    | tb_blog | ALL  |     Null      | Null |  Null   | Null |  3   | Null  |
 
 数据表的访问类型所对应的 type 列是我们比较关注的信息。type 可能有以下几种情况：
 
-![image-20200704162231322](C:\Users\孙白胖的爸爸\AppData\Roaming\Typora\typora-user-images\image-20200704162231322.png)
+|    type     |                             说明                             |
+| :---------: | :----------------------------------------------------------: |
+|     all     |                         全数据表扫描                         |
+|    index    |                         全索引表扫描                         |
+|    range    |                     对索引列进行范围查找                     |
+| index_merge |                合并索引，使用多个单列索引搜索                |
+|     ref     |                  根据索引查找找一个或多个值                  |
+|   eq_ref    |      搜索时使用primary key或unique类型，常用于多表联查       |
+|    const    | 常量，表最多有一个匹配行，因为只有一行，在这行的列值可被优化器认为是常数 |
+|             |           系统，表只有一行，是const连接类型的特例            |
 
 在这些情况里，all 是最坏的情况，因为采用了全表扫描的方式。index 和 all 差不多，只不过 index 对索引表进行全扫描，这样做的好处是不再需要对数据进行排序，但是开销依然很大。如果我们在 extra 列中看到 Using index，说明采用了索引覆盖，也就是索引可以覆盖所需的 SELECT 字段，就不需要进行回表，这样就减少了数据查找的开销。
 
@@ -16,3 +29,4 @@ range 表示采用了索引范围扫描，这里不进行举例，从这一级�
 
 index_merge 说明查询同时使用了两个或以上的索引，最后取了交集或者并集。
 
+S
