@@ -12,7 +12,7 @@ public class msJava {
 
     public static void main(String[] args) {
 
-        HashMap<String, String> map = new HashMap<>();
+        HashMap<Object, String> map = new HashMap<>();
 
     }
 

@@ -76,12 +76,7 @@
 - [排序算法汇总](https://github.com/msJavaCoder/msJava/blob/master/算法/排序算法汇总.md)
 - .....
 ### 🌈  面试题
-- [Java基础面试题](https://github.com/msJavaCoder/msJava/blob/master/面试题/Java基础面试题.md)
-- [Java进阶面试题](https://github.com/msJavaCoder/msJava/blob/master/面试题/Java进阶面试题.md)
-- [框架基础面试题](https://github.com/msJavaCoder/msJava/blob/master/面试题/框架基础面试题.md)
-- [框架进阶面试题](https://github.com/msJavaCoder/msJava/blob/master/面试题/框架进阶面试题.md)
-- [数据库基础面试题](https://github.com/msJavaCoder/msJava/blob/master/面试题/数据库基础面试题.md)
-- [数据库进阶面试题](https://github.com/msJavaCoder/msJava/blob/master/面试题/数据库进阶面试题.md)
+- [Java核心面试题](https://github.com/msJavaCoder/msJava/blob/master/面试题/Java核心面试题汇总.md)
 - .....
 
 ### ☎  联系作者
