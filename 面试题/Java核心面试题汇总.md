@@ -1,8 +1,8 @@
-# 面试题
+# Java后端开发核心面试题
 
-## Java 基础 
+## Java 基础部分
 
-### Java语言特性 
+### Java 语言特性 
 
 #### 1：Java 语言的优点？
 
@@ -32,7 +32,7 @@
 
 ------
 
-#### Java 按值调用还是引用调用？
+#### 4：Java 按值调用还是引用调用？
 
 **按值调用**指方法接收调用者提供的值，**按引用调用**指方法接收调用者提供的变量地址。
 
@@ -40,9 +40,7 @@ Java 总是按值调用，方法得到的是所有参数值的副本，传递对
 
 可以改变对象参数的状态，但不能让对象参数引用一个新的对象。如果传递了一个 int 数组，改变数组的内容会影响实参，而改变这个参数的引用并不会让实参引用新的数组对象。
 
-------
-
-#### 浅拷贝和深拷贝的区别？
+#### 5：浅拷贝和深拷贝的区别？
 
 **浅拷贝：** 只复制当前对象的基本数据类型及引用变量，没有复制引用变量指向的实际对象。修改克隆对象可能影响原对象，不安全。
 
@@ -50,7 +48,7 @@ Java 总是按值调用，方法得到的是所有参数值的副本，传递对
 
 ------
 
-#### 6：什么是反射？
+#### 6：反射是什么？
 
 在运行状态中，对于任意一个类都能知道它的所有属性和方法，对于任意一个对象都能调用它的任意方法和属性，这种动态获取信息及调用对象方法的功能称为反射。缺点是破坏了封装性以及泛型约束。反射是框架的核心，Spring 大量使用反射。
 
@@ -128,7 +126,7 @@ Java 总是按值调用，方法得到的是所有参数值的副本，传递对
 
 ------
 
-### Java数据类型 
+### Java 数据类型 
 
 #### 1：Java 有哪些基本数据类型？
 
@@ -183,9 +181,9 @@ String 类和其存储数据的成员变量 value 字节数组都是 final 修�
 
 ------
 
-### Java面向对象 
+### Java 面向对象 
 
-#### 1：谈一谈你对面向对象的理解
+#### 1：你对面向对象的理解
 
 面向过程让计算机有步骤地顺序做一件事，是过程化思维，使用面向过程语言开发大型项目，软件复用和维护存在很大问题，模块之间耦合严重。面向对象相对面向过程更适合解决规模较大的问题，可以拆解问题复杂度，对现实事物进行抽象并映射为开发对象，更接近人的思维。
 
@@ -283,12 +281,12 @@ JVM 在重载方法中选择合适方法的顺序：① 精确匹配。② 基�
 
 接口和抽象类对实体类进行更高层次的抽象，仅定义公共行为和特征。
 
-| 语法维度 | 抽象类                                             | 接口                                                         |
-| -------- | -------------------------------------------------- | ------------------------------------------------------------ |
-| 成员变量 | 无特殊要求                                         | 默认 public static final 常量                                |
-| 构造方法 | 有构造方法，不能实例化                             | 没有构造方法，不能实例化                                     |
-| 方法     | 抽象类可以没有抽象方法，但有抽象方法一定是抽象类。 | 默认 public abstract，JDK8 支持默认/静态方法，JDK9 支持私有方法。 |
-| 继承     | 单继承                                             | 多继承                                                       |
+| 语法维度 |                       抽象类                       |                             接口                             |
+| :------: | :------------------------------------------------: | :----------------------------------------------------------: |
+| 成员变量 |                     无特殊要求                     |                默认 public static final 常量                 |
+| 构造方法 |               有构造方法，不能实例化               |                   没有构造方法，不能实例化                   |
+|   方法   | 抽象类可以没有抽象方法，但有抽象方法一定是抽象类。 | 默认 public abstract，JDK8 支持默认/静态方法，JDK9 支持私有方法。 |
+|   继承   |                       单继承                       |                            多继承                            |
 
 ------
 
@@ -312,7 +310,7 @@ JVM 在重载方法中选择合适方法的顺序：① 精确匹配。② 基�
 
 ------
 
-### 集合 
+### Java 集合
 
 #### 1：说一说 ArrayList
 
@@ -360,7 +358,7 @@ TreeMap 通过 `put` 和 `deleteEntry` 实现增加和删除树节点。插入�
 
 ------
 
-#### 5：说一说HashMap ？
+#### 5：说一说HashMap
 
 JDK8 之前底层实现是数组 + 链表，JDK8 改为数组 + 链表/红黑树，节点类型从Entry 变更为 Node。主要成员变量包括存储数据的 table 数组、元素数量 size、加载因子 loadFactor。
 
@@ -372,7 +370,7 @@ HashMap 默认初始化容量为 16，扩容容量必须是 2 的幂次方、最
 
 ------
 
-#### 6：说一说HashMap 相关方法的源码？
+#### 6：说一说HashMap 相关方法的源码
 
 **JDK8 之前**
 
@@ -476,7 +474,7 @@ HashMap 默认初始化容量为 16，扩容容量必须是 2 的幂次方、最
 
 ------
 
-#### 7：说一说HashMap 为什么线程不安全？
+#### 7：说一说HashMap 为什么线程不安全
 
 JDK7 存在死循环和数据丢失问题。
 
@@ -492,7 +490,7 @@ JDK8 在 `resize` 方法中完成扩容，并改用尾插法，不会产生死�
 
 ------
 
-### IO 流 
+### Java IO 流 
 
 #### 1：同步/异步/阻塞/非阻塞 IO 的区别？
 
@@ -573,7 +571,7 @@ Java 对象 JVM 退出时会全部销毁，如果需要将对象及状态持久�
 
 ------
 
-## JVM 
+## JVM虚拟机
 
 ### 内存区域划分 
 
@@ -1703,9 +1701,9 @@ get 同样不需要同步，put 操作时如果没有出现哈希冲突，就使
 
 #### 1：IoC 是什么？
 
-IoC 即控制反转，简单来说就是把原来代码里需要实现的对象创建、依赖反转给容器来帮忙实现，需要创建一个容器并且需要一种描述让容器知道要创建的对象间的关系，在 Spring 中管理对象及其依赖关系是通过 Spring 的 IoC 容器实现的。
+IoC 即**控制反转**，是Spring框架的核心，简单的讲就是由Spring来负责控制对象的生命周期和对象间的关系。
 
-IoC 的实现方式有依赖注入和依赖查找，由于依赖查找使用的很少，因此 IoC 也叫做依赖注入。依赖注入指对象被动地接受依赖类而不用自己主动去找，对象不是从容器中查找它依赖的类，而是在容器实例化对象时主动将它依赖的类注入给它。假设一个 Car 类需要一个 Engine 的对象，那么一般需要需要手动 new 一个 Engine，利用 IoC 就只需要定义一个私有的 Engine 类型的成员变量，容器会在运行时自动创建一个 Engine 的实例对象并将引用自动注入给成员变量。
+控制指的是当前对象对内部成员的控制权；控制反转指的是，这种控制权不由当前对象管理了，有IoC容器来管理。
 
 ------
 
@@ -1751,7 +1749,7 @@ Spring IoC 容器中注册解析的 Bean 信息存放在一个 HashMap 集合中
 
 #### 5：依赖注入的过程？
 
-`getBean` 方法获取 Bean 实例，该方***调用 `doGetBean` ，`doGetBean` 真正实现从 IoC 容器获取 Bean 的功能，也是触发依赖注入的地方。
+`getBean` 方法获取 Bean 实例，该方法调用 `doGetBean` ，`doGetBean` 真正实现从 IoC 容器获取 Bean 的功能，也是触发依赖注入的地方。
 
 具体创建 Bean 对象的过程由 ObjectFactory 的 `createBean` 完成，该方法主要通过 `createBeanInstance` 方法生成 Bean 包含的 Java 对象实例和 `populateBean` 方法对 Bean 属性的依赖注入进行处理。
 
@@ -1823,11 +1821,19 @@ XML 方式通过配置 bean 标签中的 init-Method 和 destory-Method 指定�
 
 #### 11：BeanFactory、FactoryBean 和 ApplicationContext 的区别？
 
-BeanFactory 是一个 Bean 工厂，使用简单工厂模式，是 Spring IoC 容器顶级接口，可以理解为含有 Bean 集合的工厂类，作用是管理 Bean，包括实例化、定位、配置对象及建立这些对象间的依赖。BeanFactory 实例化后并不会自动实例化 Bean，只有当 Bean 被使用时才实例化与装配依赖关系，属于延迟加载，适合多例模式。
+**BeanFactory** 是一个 Bean 工厂，使用简单工厂模式，是 Spring IoC 容器顶级接口，可以理解为含有 Bean 集合的工厂类，作用是管理 Bean，包括实例化、定位、配置对象及建立这些对象间的依赖。BeanFactory 实例化后并不会自动实例化 Bean，只有当 Bean 被使用时才实例化与装配依赖关系，属于延迟加载，适合多例模式。
 
-FactoryBean 是一个工厂 Bean，使用了工厂方法模式，作用是生产其他 Bean 实例，可以通过实现该接口，提供一个工厂方法来自定义实例化 Bean 的逻辑。FactoryBean 接口由 BeanFactory 中配置的对象实现，这些对象本身就是用于创建对象的工厂，如果一个 Bean 实现了这个接口，那么它就是创建对象的工厂 Bean，而不是 Bean 实例本身。
+**FactoryBean** 是一个工厂 Bean，使用了工厂方法模式，作用是生产其他 Bean 实例，可以通过实现该接口，提供一个工厂方法来自定义实例化 Bean 的逻辑。FactoryBean 接口由 BeanFactory 中配置的对象实现，这些对象本身就是用于创建对象的工厂，如果一个 Bean 实现了这个接口，那么它就是创建对象的工厂 Bean，而不是 Bean 实例本身。
 
-ApplicationConext 是 BeanFactory 的子接口，扩展了 BeanFactory 的功能，提供了支持国际化的文本消息，统一的资源文件读取方式，事件传播以及应用层的特别配置等。容器会在初始化时对配置的 Bean 进行预实例化，Bean 的依赖注入在容器初始化时就已经完成，属于立即加载，适合单例模式，一般推荐使用。
+**ApplicationConext** 是 BeanFactory 的子接口，扩展了 BeanFactory 的功能，提供了支持国际化的文本消息，统一的资源文件读取方式，事件传播以及应用层的特别配置等。容器会在初始化时对配置的 Bean 进行预实例化，Bean 的依赖注入在容器初始化时就已经完成，属于立即加载，适合单例模式，一般推荐使用。
+
+#### 12：Bean的自动装配有哪些方式？
+
+1. **no** : 默认值，表示没有自动装配，应使用显式bean引用进行装配。
+2. **byNam**e：它根据bean的名称注入对象依赖项。
+3. **byType**：它根据类型注入对象依赖项。
+4. **构造函数**：通过构造函数来注入依赖项，需要设置大量的参数。
+5. **autodetect**：容器首先通过构造函数使用autowrie装配，如果不能，则通过byType自动装配。
 
 ------
 
@@ -2094,25 +2100,68 @@ B+ 树的优点在于：① 由于 B+ 树在非叶子节点上不含数据信息
 每一趟将一个待排序记录按其关键字的大小插入到已排好序的一组记录的适当位置上，直到所有待排序记录全部插入为止。
 
 ```java
-public` `void` `insertionSort(``int``[] nums) {``  ``for` `(``int` `i = ``1``; i < nums.length; i++) {``    ``int` `insertNum = nums[i];``    ``int` `insertIndex;``    ``for` `(insertIndex = i - ``1``; insertIndex >= ``0` `&& nums[insertIndex] > insertNum; insertIndex--) {``      ``nums[insertIndex + ``1``] = nums[insertIndex];``    ``}``    ``nums[insertIndex + ``1``] = insertNum;``  ``}``}
+public void insertionSort(int[] nums) {
+    for (int i = 1; i < nums.length; i++) {
+        int insertNum = nums[i];
+        int insertIndex;
+        for (insertIndex = i - 1; insertIndex >= 0 && nums[insertIndex] > insertNum; insertIndex--) {
+            nums[insertIndex + 1] = nums[insertIndex];
+        }
+        nums[insertIndex + 1] = insertNum;
+    }
+}
 ```
 
 直接插入没有利用到要插入的序列已有序的特点，插入第 i 个元素时可以通过二分查找找到插入位置 insertIndex，再把 i~insertIndex 之间的所有元素后移一位，把第 i 个元素放在插入位置上。
 
-```
-public` `void` `binaryInsertionSort(``int``[] nums) {``  ``for` `(``int` `i = ``1``; i < nums.length; i++) {``    ``int` `insertNum = nums[i];``    ``int` `insertIndex = -``1``;``    ``int` `start = ``0``;``    ``int` `end = i - ``1``;``    ``while` `(start <= end) {``      ``int` `mid = start + (end - start) / ``2``;``      ``if` `(insertNum > nums[mid])``        ``start = mid + ``1``;``      ``else` `if` `(insertNum < nums[mid])``        ``end = mid - ``1``;``      ``else` `{``        ``insertIndex = mid + ``1``;``        ``break``;``      ``}``    ``}``    ``if` `(insertIndex == -``1``)``      ``insertIndex = start;``    ``if` `(i - insertIndex >= ``0``)``      ``System.arraycopy(nums, insertIndex, nums, insertIndex + ``1``, i - insertIndex);``    ``nums[insertIndex] = insertNum;``  ``}``}
+```java
+public void binaryInsertionSort(int[] nums) {
+    for (int i = 1; i < nums.length; i++) {
+        int insertNum = nums[i];
+        int insertIndex = -1;
+        int start = 0;
+        int end = i - 1;
+        while (start <= end) {
+            int mid = start + (end - start) / 2;
+            if (insertNum > nums[mid])
+                start = mid + 1;
+            else if (insertNum < nums[mid])
+                end = mid - 1;
+            else {
+                insertIndex = mid + 1;
+                break;
+            }
+        }
+        if (insertIndex == -1)
+            insertIndex = start;
+        if (i - insertIndex >= 0)
+            System.arraycopy(nums, insertIndex, nums, insertIndex + 1, i - insertIndex);
+        nums[insertIndex] = insertNum;
+    }
+}
 ```
 
 ------
 
-#### Q3：希尔排序的原理？
+#### 3：希尔排序的原理？
 
 又称缩小增量排序，是对直接插入排序的改进，不稳定，平均时间复杂度 O(n^1.3^)，最差时间复杂度 O(n²)，最好时间复杂度 O(n)，空间复杂度 O(1)。
 
 把记录按下标的一定增量分组，对每组进行直接插入排序，每次排序后减小增量，当增量减至 1 时排序完毕。
 
-```
-public` `void` `shellSort(``int``[] nums) {``  ``for` `(``int` `d = nums.length / ``2``; d > ``0` `; d /= ``2``) {``    ``for` `(``int` `i = d; i < nums.length; i++) {``      ``int` `insertNum = nums[i];``      ``int` `insertIndex;``      ``for` `(insertIndex = i - d; insertIndex >= ``0` `&& nums[insertIndex] > insertNum; insertIndex -= d) {``        ``nums[insertIndex + d] = nums[insertIndex];``      ``}``      ``nums[insertIndex + d] = insertNum;``    ``}``  ``}``}
+```java
+public void shellSort(int[] nums) {
+    for (int d = nums.length / 2; d > 0 ; d /= 2) {
+        for (int i = d; i < nums.length; i++) {
+            int insertNum = nums[i];
+            int insertIndex;
+            for (insertIndex = i - d; insertIndex >= 0 && nums[insertIndex] > insertNum; insertIndex -= d) {
+                nums[insertIndex + d] = nums[insertIndex];
+            }
+            nums[insertIndex + d] = insertNum;
+        }
+    }
+}
 ```
 
 ------
@@ -2123,8 +2172,20 @@ public` `void` `shellSort(``int``[] nums) {``  ``for` `(``int` `d = nums.length 
 
 每次在未排序序列中找到最小元素，和未排序序列的第一个元素交换位置，再在剩余未排序序列中重复该操作直到所有元素排序完毕。
 
-```
-public` `void` `selectSort(``int``[] nums) {``  ``int` `minIndex;``  ``for` `(``int` `index = ``0``; index < nums.length - ``1``; index++){``    ``minIndex = index;``    ``for` `(``int` `i = index + ``1``;i < nums.length; i++){``      ``if``(nums[i] < nums[minIndex]) ``        ``minIndex = i;``    ``}``    ``if` `(index != minIndex){``      ``swap(nums, index, minIndex);``    ``}``  ``}``}
+```java
+public void selectSort(int[] nums) {
+    int minIndex;
+    for (int index = 0; index < nums.length - 1; index++){
+        minIndex = index;
+        for (int i = index + 1;i < nums.length; i++){
+            if(nums[i] < nums[minIndex])
+                minIndex = i;
+        }
+        if (index != minIndex){
+            swap(nums, index, minIndex);
+        }
+    }
+}
 ```
 
 ------
@@ -2137,8 +2198,37 @@ public` `void` `selectSort(``int``[] nums) {``  ``int` `minIndex;``  ``for` `(``
 
 以大根堆为例，在建堆时首先将最后一个节点作为当前节点，如果当前节点存在父节点且值大于父节点，就将当前节点和父节点交换。在移除时首先暂存根节点的值，然后用最后一个节点代替根节点并作为当前节点，如果当前节点存在子节点且值小于子节点，就将其与值较大的子节点进行交换，调整完堆后返回暂存的值。
 
-```
-public` `void` `add(``int``[] nums, ``int` `i, ``int` `num){``  ``nums[i] = num;``  ``int` `curIndex = i;``  ``while` `(curIndex > ``0``) {``    ``int` `parentIndex = (curIndex - ``1``) / ``2``;``    ``if` `(nums[parentIndex] < nums[curIndex]) ``      ``swap(nums, parentIndex, curIndex);``    ``else` `break``;``    ``curIndex = parentIndex;``  ``}``}` `public` `int` `remove(``int``[] nums, ``int` `size){``  ``int` `result = nums[``0``];``  ``nums[``0``] = nums[size - ``1``];``  ``int` `curIndex = ``0``;``  ``while` `(``true``) {``    ``int` `leftIndex = curIndex * ``2` `+ ``1``;``    ``int` `rightIndex = curIndex * ``2` `+ ``2``;``    ``if` `(leftIndex >= size) ``break``;``    ``int` `maxIndex = leftIndex;``    ``if` `(rightIndex < size && nums[maxIndex] < nums[rightIndex])``      ``maxIndex = rightIndex;``    ``if` `(nums[curIndex] < nums[maxIndex])``      ``swap(nums, curIndex, maxIndex);``    ``else` `break``;``    ``curIndex = maxIndex;``  ``}``  ``return` `result;``}
+```java
+public void add(int[] nums, int i, int num){
+    nums[i] = num;
+    int curIndex = i;
+    while (curIndex > 0) {
+        int parentIndex = (curIndex - 1) / 2;
+        if (nums[parentIndex] < nums[curIndex])
+            swap(nums, parentIndex, curIndex);
+        else break;
+        curIndex = parentIndex;
+    }
+}
+ 
+public int remove(int[] nums, int size){
+    int result = nums[0];
+    nums[0] = nums[size - 1];
+    int curIndex = 0;
+    while (true) {
+        int leftIndex = curIndex * 2 + 1;
+        int rightIndex = curIndex * 2 + 2;
+        if (leftIndex >= size) break;
+        int maxIndex = leftIndex;
+        if (rightIndex < size && nums[maxIndex] < nums[rightIndex])
+            maxIndex = rightIndex;
+        if (nums[curIndex] < nums[maxIndex])
+            swap(nums, curIndex, maxIndex);
+        else break;
+        curIndex = maxIndex;
+    }
+    return result;
+}
 ```
 
 ------
@@ -2149,14 +2239,33 @@ public` `void` `add(``int``[] nums, ``int` `i, ``int` `num){``  ``nums[i] = num;
 
 比较相邻的元素，如果第一个比第二个大就进行交换，对每一对相邻元素做同样的工作，从开始第一对到结尾的最后一对，每一轮排序后末尾元素都是有序的，针对 n 个元素重复以上步骤 n -1 次排序完毕。
 
-```
-public` `void` `bubbleSort(``int``[] nums) {``  ``for` `(``int` `i = ``0``; i < nums.length - ``1``; i++) {``    ``for` `(``int` `index = ``0``; index < nums.length - ``1` `- i; index++) {``      ``if` `(nums[index] > nums[index + ``1``]) ``        ``swap(nums, index, index + ``1``)``    ``}``  ``}``}
+```java
+public void bubbleSort(int[] nums) {
+    for (int i = 0; i < nums.length - 1; i++) {
+        for (int index = 0; index < nums.length - 1 - i; index++) {
+            if (nums[index] > nums[index + 1])
+                swap(nums, index, index + 1)
+        }
+    }
+}
 ```
 
 当序列已经有序时仍会进行不必要的比较，可以设置一个标志记录是否有元素交换，如果没有直接结束比较。
 
-```
-public` `void` `betterBubbleSort(``int``[] nums) {``  ``boolean` `swap;``  ``for` `(``int` `i = ``0``; i < nums.length - ``1``; i++) {``    ``swap = ``true``;``    ``for` `(``int` `index = ``0``; index < nums.length - ``1` `- i; index++) {``      ``if` `(nums[index] > nums[index + ``1``]) {``        ``swap(nums, index ,index + ``1``);``        ``swap = ``false``;``      ``}``    ``}``    ``if` `(swap) ``break``;``  ``}``}
+```java
+public void betterBubbleSort(int[] nums) {
+    boolean swap;
+    for (int i = 0; i < nums.length - 1; i++) {
+        swap = true;
+        for (int index = 0; index < nums.length - 1 - i; index++) {
+            if (nums[index] > nums[index + 1]) {
+                swap(nums, index ,index + 1);
+                swap = false;
+            }
+        }
+        if (swap) break;
+    }
+}
 ```
 
 ------
@@ -2173,8 +2282,30 @@ public` `void` `betterBubbleSort(``int``[] nums) {``  ``boolean` `swap;``  ``for
 
 最坏情况是每次所选中间数是当前序列中的最大或最小元素，这使每次划分所得子表其中一个为空表 ，这样长度为 n 的数据表需要 n 趟划分，整个排序时间复杂度 O(n²)。
 
-```
-public` `void` `quickSort(``int``[] nums, ``int` `start, ``int` `end) {``  ``if` `(start < end) {``    ``int` `pivotIndex = getPivotIndex(nums, start, end);``    ``quickSort(nums, start, pivotIndex - ``1``);``    ``quickSort(nums, pivotIndex + ``1``, end);``  ``}``}` `public` `int` `getPivotIndex(``int``[] nums, ``int` `start, ``int` `end) {``  ``int` `pivot = nums[start];``  ``int` `low = start;``  ``int` `high = end;``  ``while` `(low < high) {``    ``while` `(low <= high && nums[low] <= pivot) ``      ``low++;``    ``while` `(low <= high && nums[high] > pivot) ``      ``high--;``    ``if` `(low < high) ``      ``swap(nums, low, high);``  ``}``  ``swap(nums, start, high);``  ``return` `high;``}
+```java
+public void quickSort(int[] nums, int start, int end) {
+    if (start < end) {
+        int pivotIndex = getPivotIndex(nums, start, end);
+        quickSort(nums, start, pivotIndex - 1);
+        quickSort(nums, pivotIndex + 1, end);
+    }
+}
+ 
+public int getPivotIndex(int[] nums, int start, int end) {
+    int pivot = nums[start];
+    int low = start;
+    int high = end;
+    while (low < high) {
+        while (low <= high && nums[low] <= pivot)
+            low++;
+        while (low <= high && nums[high] > pivot)
+            high--;
+        if (low < high)
+            swap(nums, low, high);
+    }
+    swap(nums, start, high);
+    return high;
+}
 ```
 
 **优化：**当规模足够小时，例如 `end - start < 10` 时，采用直接插入排序。
@@ -2189,8 +2320,34 @@ public` `void` `quickSort(``int``[] nums, ``int` `start, ``int` `end) {``  ``if`
 
 **适用场景：**数据量大且对稳定性有要求的情况。
 
-```
-int``[] help;` `public` `void` `mergeSort(``int``[] arr) {``  ``int``[] help = ``new` `int``[arr.length];``  ``sort(arr, ``0``, arr.length - ``1``);``}` `public` `void` `sort(``int``[] arr, ``int` `start, ``int` `end) {``  ``if` `(start == end) ``return``;``  ``int` `mid = start + (end - start) / ``2``;``  ``sort(arr, start, mid);``  ``sort(arr, mid + ``1``, end);``  ``merge(arr, start, mid, end);``}` `public` `void` `merge(``int``[] arr, ``int` `start, ``int` `mid, ``int` `end) {``  ``if` `(end + ``1` `- start >= ``0``) System.arraycopy(arr, start, help, start, end + ``1` `- start);``  ``int` `p = start;``  ``int` `q = mid + ``1``;``  ``int` `index = start;``  ``while` `(p <= mid && q <= end) {``    ``if` `(help[p] < help[q]) ``      ``arr[index++] = help[p++];``    ``else``      ``arr[index++] = help[q++];``  ``}``  ``while` `(p <= mid) arr[index++] = help[p++];``  ``while` `(q <= end) arr[index++] = help[q++];``}
+```java
+ public void mergeSort(int[] arr) {
+    int[] help = new int[arr.length];
+    sort(arr, 0, arr.length - 1);
+}
+ 
+public void sort(int[] arr, int start, int end) {
+    if (start == end) return;
+    int mid = start + (end - start) / 2;
+    sort(arr, start, mid);
+    sort(arr, mid + 1, end);
+    merge(arr, start, mid, end);
+}
+ 
+public void merge(int[] arr, int start, int mid, int end) {
+    if (end + 1 - start >= 0) System.arraycopy(arr, start, help, start, end + 1 - start);
+    int p = start;
+    int q = mid + 1;
+    int index = start;
+    while (p <= mid && q <= end) {
+        if (help[p] < help[q])
+            arr[index++] = help[p++];
+        else
+            arr[index++] = help[q++];
+    }
+    while (p <= mid) arr[index++] = help[p++];
+    while (q <= end) arr[index++] = help[q++];
+}
 ```
 
 ------
@@ -2285,32 +2442,78 @@ Spring 的 ApplicationContext 创建的 Bean 实例都是单例对象，还有 S
 
 **饿汉式：**在类加载时就初始化创建单例对象，线程安全，但不管是否使用都创建对象可能会浪费内存。
 
-```
-public` `class` `HungrySingleton {``  ``private` `HungrySingleton(){}` `  ``private` `static` `HungrySingleton instance = ``new` `HungrySingleton();` `  ``public` `static` `HungrySingleton getInstance() {``    ``return` `instance;``  ``}``}
+```java
+public class HungrySingleton {
+    private HungrySingleton(){}
+ 
+    private static HungrySingleton instance = new HungrySingleton();
+ 
+    public static HungrySingleton getInstance() {
+        return instance;
+    }
+}
 ```
 
 **懒汉式：**在外部调用时才会加载，线程不安全，可以加锁保证线程安全但效率低。
 
-```
-public` `class` `LazySingleton {``  ``private` `LazySingleton(){}` `  ``private` `static` `LazySingleton instance;` `  ``public` `static` `LazySingleton getInstance() {``    ``if``(instance == ``null``) {``      ``instance = ``new` `LazySingleton();``    ``}``    ``return` `instance;``  ``}``}
+```java
+public class LazySingleton {
+    private LazySingleton(){}
+ 
+    private static LazySingleton instance;
+ 
+    public static LazySingleton getInstance() {
+        if(instance == null) {
+            instance = new LazySingleton();
+        }
+        return instance;
+    }
+}
 ```
 
 **双重检查锁：**使用 volatile 以及多重检查来减小锁范围，提升效率。
 
-```
-public` `class` `DoubleCheckSingleton {``  ``private` `DoubleCheckSingleton(){}` `  ``private` `volatile` `static` `DoubleCheckSingleton instance;` `  ``public` `static` `DoubleCheckSingleton getInstance() {``    ``if``(instance == ``null``) {``      ``synchronized` `(DoubleCheckSingleton.``class``) {``        ``if` `(instance == ``null``) {``          ``instance = ``new` `DoubleCheckSingleton();``        ``}``      ``}``    ``}``    ``return` `instance;``  ``}``}
+```java
+public class DoubleCheckSingleton {
+    private DoubleCheckSingleton(){}
+ 
+    private volatile static DoubleCheckSingleton instance;
+ 
+    public static DoubleCheckSingleton getInstance() {
+        if(instance == null) {
+            synchronized (DoubleCheckSingleton.class) {
+                if (instance == null) {
+                    instance = new DoubleCheckSingleton();
+                }
+            }
+        }
+        return instance;
+    }
+}
 ```
 
 **静态内部类：**同时解决饿汉式的内存浪费问题和懒汉式的线程安全问题。
 
-```
-public` `class` `StaticSingleton {``  ``private` `StaticSingleton(){}` `  ``public` `static` `StaticSingleton getInstance() {``    ``return` `StaticClass.instance;``  ``}` `  ``private` `static` `class` `StaticClass {``    ``private` `static` `final` `StaticSingleton instance = ``new` `StaticSingleton();``  ``}``}
+```java
+public class StaticSingleton {
+    private StaticSingleton(){}
+ 
+    public static StaticSingleton getInstance() {
+        return StaticClass.instance;
+    }
+ 
+    private static class StaticClass {
+        private static final StaticSingleton instance = new StaticSingleton();
+    }
+}
 ```
 
 **枚举：**《Effective Java》提倡的方式，不仅能避免线程安全问题，还能防止反序列化重新创建新的对象，绝对防止多次实例化，也能防止反射破解单例的问题。
 
-```
-public` `enum` `EnumSingleton {``  ``INSTANCE;``}
+```java
+public enum EnumSingleton {
+    INSTANCE;
+}
 ```
 
 ------
@@ -2544,7 +2747,17 @@ Memory 表支持哈希索引，因此查找速度极快。虽然速度很快但�
 
 #### 13：查询执行流程是什么？
 
-简单来说分为五步：① 客户端发送一条查询给服务器。② 服务器先检查查询缓存，如果命中了缓存则立刻返回存储在缓存中的结果，否则进入下一阶段。③ 服务器端进行 SQL 解析、预处理，再由优化器生成对应的执行计划。④ MySQL 根据优化器生成的执行计划，调用存储引擎的 API 来执行查询。⑤ 将结果返回给客户端。 
+简单来说分为五步：
+
+① 客户端发送一条查询给服务器。
+
+② 服务器先检查查询缓存，如果命中了缓存则立刻返回存储在缓存中的结果，否则进入下一阶段。
+
+③ 服务器端进行 SQL 解析、预处理，再由优化器生成对应的执行计划。
+
+④ MySQL 根据优化器生成的执行计划，调用存储引擎的 API 来执行查询。
+
+⑤ 将结果返回给客户端。 
 
 ------
 
@@ -2686,19 +2899,13 @@ MySQL 允许在相同列上创建多个索引，重复的索引需要单独维�
 
 #### 10：索引失效的情况有哪些？
 
-如果索引列出现了隐式类型转换，则 MySQL 不会使用索引。常见的情况是在 SQL 的 WHERE 条件中字段类型为字符串，其值为数值，如果没有加引号那么 MySQL 不会使用索引。
-
-如果 WHERE 条件中含有 OR，除非 OR 前使用了索引列而 OR 之后是非索引列，索引会失效。
-
-MySQL 不能在索引中执行 LIKE 操作，这是底层存储引擎 API 的限制，最左匹配的 LIKE 比较会被转换为简单的比较操作，但如果是以通配符开头的 LIKE 查询，存储引擎就无法做比较。这种情况下 MySQL 只能提取数据行的值而不是索引值来做比较。
-
-如果查询中的列不是独立的，则 MySQL 不会使用索引。独立的列是指索引列不能是表达式的一部分，也不能是函数的参数。
-
-对于多个范围条件查询，MySQL 无法使用第一个范围列后面的其他索引列，对于多个等值查询则没有这种限制。
-
-如果 MySQL 判断全表扫描比使用索引查询更快，则不会使用索引。
-
-索引文件具有 B-Tree 的最左前缀匹配特性，如果左边的值未确定，那么无法使用此索引。
+1. 如果索引列出现了隐式类型转换，则 MySQL 不会使用索引。常见的情况是在 SQL 的 WHERE 条件中字段类型为字符串，其值为数值，如果没有加引号那么 MySQL 不会使用索引。
+2. 如果 WHERE 条件中含有 OR，除非 OR 前使用了索引列而 OR 之后是非索引列，索引会失效。
+3. MySQL 不能在索引中执行 LIKE 操作，这是底层存储引擎 API 的限制，最左匹配的 LIKE 比较会被转换为简单的比较操作，但如果是以通配符开头的 LIKE 查询，存储引擎就无法做比较。这种情况下 MySQL 只能提取数据行的值而不是索引值来做比较。
+4. 如果查询中的列不是独立的，则 MySQL 不会使用索引。独立的列是指索引列不能是表达式的一部分，也不能是函数的参数。
+5. 对于多个范围条件查询，MySQL 无法使用第一个范围列后面的其他索引列，对于多个等值查询则没有这种限制。
+6. 如果 MySQL 判断全表扫描比使用索引查询更快，则不会使用索引。
+7. 索引文件具有 B-Tree 的最左前缀匹配特性，如果左边的值未确定，那么无法使用此索引。
 
 ------
 
@@ -3260,7 +3467,7 @@ skiplist 跳跃表：当 ziplist 不满足条件时使用，因为此时 ziplist
 
 ------
 
-### 键和数据库管理 5
+### 键和数据库管理 
 
 #### 1：如何对键重命名？
 
