@@ -20,13 +20,13 @@
 - [HashMap原理分析](https://github.com/msJavaCoder/msJava/blob/master/集合/HashMap原理分析.md)
 - [HashMap 为什么是线程不安全的？](https://github.com/msJavaCoder/msJava/blob/master/集合/HashMap%20为什么是线程不安全的？.md)
 - [ConcurrentHashMap实现原理](https://github.com/msJavaCoder/msJava/blob/master/集合/ConcurrentHashMap实现原理.md)
-- ........
+
 
 ### 🔐  多线程
 - [Java中的锁](https://github.com/msJavaCoder/msJava/blob/master/多线程/Java中的锁.md)
 - [理解synchronized关键字](https://github.com/msJavaCoder/msJava/blob/master/多线程/理解synchronized关键字.md)
 - [Java线程池](https://github.com/msJavaCoder/msJava/blob/master/多线程/Java线程池.md)
-- .....
+
 
 ### 💈  IO
 - [IO基础知识总结](https://github.com/msJavaCoder/msJava/blob/master/IO/IO基础知识总结.md)
@@ -37,22 +37,26 @@
 - [垃圾回收算法](https://github.com/msJavaCoder/msJava/blob/master/JVM/垃圾回收算法.md)
 - [JVM确认可回收对象的方式](https://github.com/msJavaCoder/msJava/blob/master/JVM/JVM确认可回收对象的方式.md)
 - [Java内存模型](https://github.com/msJavaCoder/msJava/blob/master/JVM/Java内存模型.md)
-- .....
+
 
 ### 🚏  设计模式
 - [设计模式总结](https://github.com/msJavaCoder/msJava/blob/master/设计模式/设计模式总结.md)
+- [单例模式及Java实现](https://github.com/msJavaCoder/msJava/blob/master/设计模式/设计模式总结.md)
+- [工厂模式及Java实现](https://github.com/msJavaCoder/msJava/blob/master/设计模式/设计模式总结.md)
+- [抽象工长及Java实现](https://github.com/msJavaCoder/msJava/blob/master/设计模式/设计模式总结.md)
+- [代理模式及Java实现](https://github.com/msJavaCoder/msJava/blob/master/设计模式/设计模式总结.md)
+- [适配器模式及Java实现](https://github.com/msJavaCoder/msJava/blob/master/设计模式/设计模式总结.md)
 
 ### 🔭  网络
 
 -  [关于TCP和UDP有哪些你不知道？](https://github.com/msJavaCoder/msJava/blob/master/网络/理解TCP和UDP.md)
-- .....
 
 ### 🏖  框架
 - [Spring](https://github.com/msJavaCoder/msJava/blob/master/框架/Spring.md)
 - [SpringBoot](https://github.com/msJavaCoder/msJava/blob/master/框架/SpringBoot.md)
 - [Spring MVC](https://github.com/msJavaCoder/msJava/blob/master/框架/SpringMVC.md)
 - [MyBatis](https://github.com/msJavaCoder/msJava/blob/master/框架/MyBatis.md)
-- ....
+
 ### 📰  数据库
 - [MySQL基础概念总结](https://github.com/msJavaCoder/msJava/blob/master/数据库/MySQL.md)
 - [浅谈MySQL的优化方案](https://github.com/msJavaCoder/msJava/blob/master/数据库/浅谈MySQL的优化方案.md)
@@ -74,10 +78,10 @@
 
 ### 📰  数据结构与算法
 - [排序算法汇总](https://github.com/msJavaCoder/msJava/blob/master/算法/排序算法汇总.md)
-- .....
+
 ### 🌈  面试题
 - [Java核心面试题](https://github.com/msJavaCoder/msJava/blob/master/面试题/Java核心面试题汇总.md)
-- .....
+
 
 ### ☎  联系作者
 
