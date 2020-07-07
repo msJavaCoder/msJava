@@ -1,3 +1,6 @@
+<div align="center">
+    <img src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/githubio/LogoMakr_0zpEzN.png" width="200px">
+</div>
 # 🔥 微信公众号 ： 码上Java
 
 > 关注微信订阅号： 码上Java 回复关键字 ： 1 领取后端面试大礼包（简历模板、面试题、Java、数据结构、算法、数据库、python、操作系统、网络等）
@@ -71,7 +74,7 @@
 - .....
 ### 🗽  Redis
 
-- .....
+- [TODO]
 
 ### 🚀  Linux
 - [后端开发必备Linux基础命令总结](https://github.com/msJavaCoder/msJava/blob/master/Linux/后端开发必备Linux基础命令总结.md)
