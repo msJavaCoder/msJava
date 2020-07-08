@@ -15,41 +15,41 @@
 
 ### ♨  Java核心基础
 
-- [Java关键字理解](https://github.com/msJavaCoder/msJava/blob/master/Java核心基础/Java关键字理解.md)
-- [浅克隆和深克隆](https://github.com/msJavaCoder/msJava/blob/master/Java核心基础/浅克隆和深克隆.md)
-- [理解动态代理](https://github.com/msJavaCoder/msJava/blob/master/Java核心基础/理解动态代理.md)
+- [Java关键字理解](https://github.com/msJavaCoder/msJava/blob/master/docs/java/Java关键字理解.md)
+- [浅克隆和深克隆](https://github.com/msJavaCoder/msJava/blob/master/docs/java/浅克隆和深克隆.md)
+- [理解动态代理](https://github.com/msJavaCoder/msJava/blob/master/docs/java//理解动态代理.md)
 
 ---
 
 ### ⭕  集合
 
-- [Java集合容器有哪些？](https://github.com/msJavaCoder/msJava/blob/master/集合/Java集合容器.md)
-- [HashMap原理分析](https://github.com/msJavaCoder/msJava/blob/master/集合/HashMap原理分析.md)
-- [HashMap 为什么是线程不安全的？](https://github.com/msJavaCoder/msJava/blob/master/集合/HashMap%20为什么是线程不安全的？.md)
-- [ConcurrentHashMap实现原理](https://github.com/msJavaCoder/msJava/blob/master/集合/ConcurrentHashMap实现原理.md)
+- [Java集合容器有哪些？](https://github.com/msJavaCoder/msJava/blob/master/docs/java/Java集合容器.md)
+- [HashMap原理分析](https://github.com/msJavaCoder/msJava/blob/master/docs/java/HashMap原理分析.md)
+- [HashMap为什么是线程不安全的](https://github.com/msJavaCoder/msJava/blob/master/docs/java/HashMap为什么是线程不安全的.md)
+- [ConcurrentHashMap实现原理](https://github.com/msJavaCoder/msJava/blob/master/docs/java/ConcurrentHashMap实现原理.md)
 
 ---
 
 
 ### 🔐  多线程
-- [Java中的锁](https://github.com/msJavaCoder/msJava/blob/master/多线程/Java中的锁.md)
-- [理解synchronized关键字](https://github.com/msJavaCoder/msJava/blob/master/多线程/理解synchronized关键字.md)
-- [Java线程池](https://github.com/msJavaCoder/msJava/blob/master/多线程/Java线程池.md)
+- [Java中的锁](https://github.com/msJavaCoder/msJava/blob/master/docs/java/Java中的锁.md)
+- [理解synchronized关键字](https://github.com/msJavaCoder/msJava/blob/master/docs/java/理解synchronized关键字.md)
+- [Java线程池](https://github.com/msJavaCoder/msJava/blob/master/docs/java/Java线程池.md)
 
 ---
 
 
 ### 💈  IO
-- [IO基础知识总结](https://github.com/msJavaCoder/msJava/blob/master/IO/IO基础知识总结.md)
+- [IO基础知识总结](https://github.com/msJavaCoder/msJava/blob/master/docs/java/IO基础知识总结.md)
 ---
 
 ### 💻  JVM
-- [Java运行时内存划分](https://github.com/msJavaCoder/msJava/blob/master/JVM/Java运行时内存划分.md)
-- [类加载机制](https://github.com/msJavaCoder/msJava/blob/master/JVM/类加载机制.md)
-- [垃圾回收器](https://github.com/msJavaCoder/msJava/blob/master/JVM/垃圾回收器.md)
-- [垃圾回收算法](https://github.com/msJavaCoder/msJava/blob/master/JVM/垃圾回收算法.md)
-- [JVM确认可回收对象的方式](https://github.com/msJavaCoder/msJava/blob/master/JVM/JVM确认可回收对象的方式.md)
-- [Java内存模型](https://github.com/msJavaCoder/msJava/blob/master/JVM/Java内存模型.md)
+- [Java运行时内存划分](https://github.com/msJavaCoder/msJava/blob/master/docs/jvm/Java运行时内存划分.md)
+- [类加载机制](https://github.com/msJavaCoder/msJava/blob/master/docs/jvm/类加载机制.md)
+- [垃圾回收器](https://github.com/msJavaCoder/msJava/blob/master/docs/jvm/垃圾回收器.md)
+- [垃圾回收算法](https://github.com/msJavaCoder/msJava/blob/master/docs/jvm/垃圾回收算法.md)
+- [JVM确认可回收对象的方式](https://github.com/msJavaCoder/msJava/blob/master/docs/jvm/JVM确认可回收对象的方式.md)
+- [Java内存模型](https://github.com/msJavaCoder/msJava/blob/master/docs/jvm/Java内存模型.md)
 
 ---
 
@@ -66,29 +66,27 @@
 
 ### 🔭  网络
 
--  [关于TCP和UDP有哪些你不知道？](https://github.com/msJavaCoder/msJava/blob/master/网络/理解TCP和UDP.md)
+-  [关于TCP和UDP有哪些你不知道？](./docs/network/理解TCP和UDP.md)
 
 ---
 
 ### 🏖  框架
-- [Spring](https://github.com/msJavaCoder/msJava/blob/master/框架/Spring.md)
-- [SpringBoot](https://github.com/msJavaCoder/msJava/blob/master/框架/SpringBoot.md)
-- [Spring MVC](https://github.com/msJavaCoder/msJava/blob/master/框架/SpringMVC.md)
-- [MyBatis](https://github.com/msJavaCoder/msJava/blob/master/框架/MyBatis.md)
-
+- [Spring](./docs/框架/.md)
+- [SpringBoot](./docs/框架/.md)
+- [SpringMVC](./docs/框架/.md)
+- [MyBatis](./docs/框架/.md)
 ---
 
 ### 📰  数据库
-- [MySQL基础概念总结](https://github.com/msJavaCoder/msJava/blob/master/数据库/MySQL.md)
-- [浅谈MySQL的优化方案](https://github.com/msJavaCoder/msJava/blob/master/数据库/浅谈MySQL的优化方案.md)
-- [SQL进阶](https://github.com/msJavaCoder/msJava/blob/master/数据库/SQL进阶.md)
-- [B树与B+树详谈](https://github.com/msJavaCoder/msJava/blob/master/数据库/B树与B+树详谈.md)
-- [Hash索引与B+树索引的区别](https://github.com/msJavaCoder/msJava/blob/master/数据库/Hash索引与B+树索引的区别.md)
-- [什么情况下索引会失效](https://github.com/msJavaCoder/msJava/blob/master/数据库/什么情况下索引会失效.md)
-- [什么时候不需要创建索引](https://github.com/msJavaCoder/msJava/blob/master/数据库/什么时候不需要创建索引.md)
-- [如何使用索引](https://github.com/msJavaCoder/msJava/blob/master/数据库/如何使用索引.md)
-- [如何使用EXPLAIN查看执行计划](https://github.com/msJavaCoder/msJava/blob/master/数据库/如何使用EXPLAIN查看执行计划.md)
-- [常见SQL优化方式](https://github.com/msJavaCoder/msJava/blob/master/数据库/常见SQL优化方式.md)
+- [SQL进阶](./docs/network/SQL进阶.md)
+- [常见SQL优化方式](./docs/network/常见SQL优化方式.md)
+- [MySQL基础概念](./docs/network/MySQL.md)
+- [如何使用索引](./docs/network/如何使用索引.md)
+- [什么情况下索引会失效](./docs/network/什么情况下索引会失效.md)
+- [什么时候不需要创建索引](./docs/network/什么时候不需要创建索引.md)
+- [B树与B+树详谈](./docs/network/B树与B+树详谈.md)
+- [Hash索引与B+树索引的区别](./docs/network/Hash索引与B+树索引的区别.md)
+- [如何使用EXPLAIN查看执行计划](./docs/network/如何使用EXPLAIN查看执行计划.md)
 ---
 
 ### 🗽  Redis
