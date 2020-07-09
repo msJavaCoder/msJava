@@ -68,27 +68,27 @@
 
 ### 🔭  网络
 
--  [关于TCP和UDP有哪些你不知道？](./docs/network/理解TCP和UDP.md)
+-  [关于TCP和UDP有哪些你不知道？](https://github.com/msJavaCoder/msJava/blob/master/docs/network/理解TCP和UDP.md)
 
 ---
 
 ### 🏖  框架
-- [Spring](./docs/框架/.md)
-- [SpringBoot](./docs/框架/.md)
-- [SpringMVC](./docs/框架/.md)
-- [MyBatis](./docs/框架/.md)
+- [Spring](https://github.com/msJavaCoder/msJava/blob/master/docs/框架/.md)
+- [SpringBoot](https://github.com/msJavaCoder/msJava/blob/master/docs/框架/.md)
+- [SpringMVC](https://github.com/msJavaCoder/msJava/blob/master/docs/框架/.md)
+- [MyBatis](https://github.com/msJavaCoder/msJava/blob/master/docs/框架/.md)
 ---
 
 ### 📰  数据库
-- [SQL进阶](./docs/network/SQL进阶.md)
-- [常见SQL优化方式](./docs/network/常见SQL优化方式.md)
-- [MySQL基础概念](./docs/network/MySQL.md)
-- [如何使用索引](./docs/network/如何使用索引.md)
-- [什么情况下索引会失效](./docs/network/什么情况下索引会失效.md)
-- [什么时候不需要创建索引](./docs/network/什么时候不需要创建索引.md)
-- [B树与B+树详谈](./docs/network/B树与B+树详谈.md)
-- [Hash索引与B+树索引的区别](./docs/network/Hash索引与B+树索引的区别.md)
-- [如何使用EXPLAIN查看执行计划](./docs/network/如何使用EXPLAIN查看执行计划.md)
+- [SQL进阶](https://github.com/msJavaCoder/msJava/blob/master/docs/network/SQL进阶.md)
+- [常见SQL优化方式](https://github.com/msJavaCoder/msJava/blob/master/docs/network/常见SQL优化方式.md)
+- [MySQL基础概念](https://github.com/msJavaCoder/msJava/blob/master/docs/network/MySQL.md)
+- [如何使用索引](https://github.com/msJavaCoder/msJava/blob/master/docs/network/如何使用索引.md)
+- [什么情况下索引会失效](https://github.com/msJavaCoder/msJava/blob/master/docs/network/什么情况下索引会失效.md)
+- [什么时候不需要创建索引](https://github.com/msJavaCoder/msJava/blob/master/docs/network/什么时候不需要创建索引.md)
+- [B树与B+树详谈](https://github.com/msJavaCoder/msJava/blob/master/docs/network/B树与B+树详谈.md)
+- [Hash索引与B+树索引的区别](https://github.com/msJavaCoder/msJava/blob/master/docs/network/Hash索引与B+树索引的区别.md)
+- [如何使用EXPLAIN查看执行计划](https://github.com/msJavaCoder/msJava/blob/master/docs/network/如何使用EXPLAIN查看执行计划.md)
 ---
 
 ### 🗽  Redis
@@ -103,12 +103,12 @@
 ---
 
 ### 📰  数据结构与算法
-- [排序算法汇总](https://github.com/msJavaCoder/msJava/blob/master/算法/排序算法汇总.md)
+- [排序算法汇总](https://github.com/msJavaCoder/msJava/blob/master/docs/算法/排序算法汇总.md)
 
 ---
 
 ### 🌈  面试题
-- [Java核心面试题](https://github.com/msJavaCoder/msJava/blob/master/面试题/Java核心面试题汇总.md)
+- [Java核心面试题](https://github.com/msJavaCoder/msJava/blob/master/docs/面试题/Java核心面试题汇总.md)
 
 ---
 
