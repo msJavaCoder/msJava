@@ -2,9 +2,9 @@
   * [理解TCP和UDP](./docs/network/理解TCP和UDP.md)
 
 * Java核心基础
-  * [理解抽象类与接口](./docs/java/Java关键字理解.md)
-  * [ConcurrentHashMap实现原理](./docs/java/理解动态代理.md)
-  * [HashMap为什么是线程不安全的？.md](./docs/java/理解抽象类与接口.md)
+  * [Java关键字理解](./docs/java/Java关键字理解.md)
+  * [理解动态代理](./docs/java/理解动态代理.md)
+  * [理解抽象类与接口](./docs/java/理解抽象类与接口.md)
  
 * 集合
   * [Java集合容器](./docs/java/Java集合容器.md)
