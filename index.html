@@ -36,6 +36,12 @@
      
     }
   </script>
+
+  <script>
+    if (typeof navigator.serviceWorker !== 'undefined') {
+      navigator.serviceWorker.register('sw.js')
+    }
+  </script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
   <!-- 全文搜索-->
   <script src="https://cdn.bootcss.com/docsify/4.5.9/plugins/search.min.js"></script>
