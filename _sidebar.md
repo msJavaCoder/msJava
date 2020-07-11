@@ -2,7 +2,8 @@
   * [理解TCP和UDP](./docs/network/理解TCP和UDP.md)
 
 * Java核心基础
-  * [Java关键字理解](./docs/java/Java关键字理解.md)
+  * [理解Java关键字](./docs/java/Java关键字理解.md)
+  * [深入理解字符串](./docs/java/深入理解字符串.md)
   * [理解动态代理](./docs/java/理解动态代理.md)
   * [理解抽象类与接口](./docs/java/理解抽象类与接口.md)
   * [理解异常处理](./docs/java/理解异常处理.md)
@@ -18,9 +19,10 @@
   * [ConcurrentHashMap实现原理](./docs/java/ConcurrentHashMap实现原理.md)
   
 * 并发编程
+  * [理解线程与死锁](./docs/java/理解线程与死锁.md)
   * [理解ThreadLocal](./docs/java/理解ThreadLocal.md)
   * [理解synchronized关键字](./docs/java/理解synchronized关键字.md)
-  * [Java中的锁](./docs/java/Java中的锁.md)
+  * [理解Java中的各种锁](./docs/java/理解Java中的各种锁.md)
   * [Java线程池](./docs/java/Java线程池.md)
   
 * 框架

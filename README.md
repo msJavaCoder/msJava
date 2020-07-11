@@ -17,7 +17,8 @@
 
 ### ♨  Java核心基础
 
-- [Java关键字理解](https://github.com/msJavaCoder/msJava/blob/master/docs/java/Java关键字理解.md)
+- [理解Java关键字](https://github.com/msJavaCoder/msJava/blob/master/docs/java/Java关键字理解.md)
+- [深入理解字符串](https://github.com/msJavaCoder/msJava/blob/master/docs/java/深入理解字符串.md)
 - [浅克隆和深克隆](https://github.com/msJavaCoder/msJava/blob/master/docs/java/浅克隆和深克隆.md)
 - [理解动态代理](https://github.com/msJavaCoder/msJava/blob/master/docs/java//理解动态代理.md)
 - [理解抽象类与接口](https://github.com/msJavaCoder/msJava/blob/master/docs/java//理解抽象类与接口.md)
@@ -41,7 +42,8 @@
 
 
 ### 🔐  多线程
-- [Java中的锁](https://github.com/msJavaCoder/msJava/blob/master/docs/java/Java中的锁.md)
+- [理解线程与死锁](https://github.com/msJavaCoder/msJava/blob/master/docs/java/理解线程与死锁.md)
+- [理解Java中的各种锁](https://github.com/msJavaCoder/msJava/blob/master/docs/java/理解Java中的各种锁.md)
 - [理解ThreadLocal](https://github.com/msJavaCoder/msJava/blob/master/docs/java/理解ThreadLocal.md)
 - [理解synchronized关键字](https://github.com/msJavaCoder/msJava/blob/master/docs/java/理解synchronized关键字.md)
 - [Java线程池](https://github.com/msJavaCoder/msJava/blob/master/docs/java/Java线程池.md)
