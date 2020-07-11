@@ -28,7 +28,7 @@
   * [理解synchronized关键字](./docs/java/理解synchronized关键字.md) 
   * [理解线程安全synchronized与ReentrantLock](./docs/java/理解线程安全synchronized与ReentrantLock.md)
   * [理解Java中的各种锁](./docs/java/理解Java中的各种锁.md)
-  * [理解线程池](docs/java/理解线程池.md)
+  * [理解线程池](./docs/java/理解线程池.md)
   
 * 框架
   * [Spring框架](./docs/框架/Spring.md)
