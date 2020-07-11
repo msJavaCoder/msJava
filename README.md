@@ -27,6 +27,7 @@
 - [理解抽象类与接口](https://github.com/msJavaCoder/msJava/blob/master/docs/java//理解抽象类与接口.md)
 - [理解异常处理](https://github.com/msJavaCoder/msJava/blob/master/docs/java//理解异常处理.md)
 - [理解IO](https://github.com/msJavaCoder/msJava/blob/master/docs/java//IO.md)
+- [理解数据结构队列](https://github.com/msJavaCoder/msJava/blob/master/docs/java//理解数据结构队列.md)
 - [理解内部类与枚举类](https://github.com/msJavaCoder/msJava/blob/master/docs/java//各种内部类和枚举类.md)
 - [理解克隆与序列化应用](https://github.com/msJavaCoder/msJava/blob/master/docs/java//理解克隆与序列化应用.md)
 
