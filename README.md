@@ -114,7 +114,7 @@
 - [JVM面试题汇总](https://github.com/msJavaCoder/msJava/blob/master/docs/面试题/JVM面试题汇总.md)
 - [设计模式常见面试题汇总](https://github.com/msJavaCoder/msJava/blob/master/docs/面试题/设计模式常见面试题汇总.md)
 - [消息队列面试题汇总](https://github.com/msJavaCoder/msJava/blob/master/docs/面试题/消息队列面试题汇总.md)
-- [消息队列面试题汇总](https://github.com/msJavaCoder/msJava/blob/master/docs/面试题/消息队列面试题汇总.md)
+- [分布式框架面试题汇总](https://github.com/msJavaCoder/msJava/blob/master/docs/面试题/分布式框架面试题汇总.md)
 
 ---
 
