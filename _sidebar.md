@@ -25,7 +25,8 @@
 * 并发编程
   * [理解线程与死锁](./docs/java/理解线程与死锁.md)
   * [理解ThreadLocal](./docs/java/理解ThreadLocal.md)
-  * [理解synchronized关键字](./docs/java/理解synchronized关键字.md)
+  * [理解synchronized关键字](./docs/java/理解synchronized关键字.md) 
+  * [理解线程安全synchronized与ReentrantLock](./docs/java/理解线程安全synchronized与ReentrantLock.md)
   * [理解Java中的各种锁](./docs/java/理解Java中的各种锁.md)
   * [Java线程池](./docs/java/Java线程池.md)
   

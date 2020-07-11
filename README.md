@@ -50,6 +50,7 @@
 - [理解Java中的各种锁](https://github.com/msJavaCoder/msJava/blob/master/docs/java/理解Java中的各种锁.md)
 - [理解ThreadLocal](https://github.com/msJavaCoder/msJava/blob/master/docs/java/理解ThreadLocal.md)
 - [理解synchronized关键字](https://github.com/msJavaCoder/msJava/blob/master/docs/java/理解synchronized关键字.md)
+- [理解线程安全synchronized与ReentrantLock](https://github.com/msJavaCoder/msJava/blob/master/docs/java/理解线程安全synchronized与ReentrantLock.md)
 - [Java线程池](https://github.com/msJavaCoder/msJava/blob/master/docs/java/Java线程池.md)
 
 ---
