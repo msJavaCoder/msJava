@@ -1,4 +1,4 @@
-## Spring 核心功能演示 + 面试题
+## Spring
 
 Spring Framework 简称 Spring，是 Java 开发中最常用的框架，地位仅次于 Java API，就连近几年比较流行的微服务框架 SpringBoot，也是基于 Spring 实现的，SpringBoot 的诞生是为了让开发者更方便地使用 Spring，因此 Spring 在 Java 体系中的地位可谓首屈一指。
 当然，如果想要把 Spring 所有功能都讲的一清二楚，远远不是一两篇文章能够做到的，但幸运的是，Spring 的基础资料可以很轻易的搜索到，那么我们本讲主要的目的就是把 Spring 中的核心知识点和常见面试题分享给大家，希望对大家能有所帮助。
