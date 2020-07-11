@@ -45,5 +45,6 @@
   * [算法常用面试题汇总](./docs/Interviewquestions/算法常用面试题汇总.md)
   * [JVM面试题汇总](./docs/Interviewquestions/JVM面试题汇总.md)
   * [设计模式常见面试题汇总](./docs/Interviewquestions/JVM面试题汇总.md)
+  * [消息队列面试题汇总](./docs/Interviewquestions/消息队列面试题汇总.md)
   * [分布式框架面试题汇总](./docs/Interviewquestions/分布式框架面试题合集.md)
 
