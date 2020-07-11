@@ -73,10 +73,10 @@
 ---
 
 ### 🏖  框架
-- [Spring](https://github.com/msJavaCoder/msJava/blob/master/docs/框架/.md)
-- [SpringBoot](https://github.com/msJavaCoder/msJava/blob/master/docs/框架/.md)
-- [SpringMVC](https://github.com/msJavaCoder/msJava/blob/master/docs/框架/.md)
-- [MyBatis](https://github.com/msJavaCoder/msJava/blob/master/docs/框架/.md)
+- [Spring](https://github.com/msJavaCoder/msJava/blob/master/docs/框架/Spring.md)
+- [SpringMVC](https://github.com/msJavaCoder/msJava/blob/master/docs/框架/SpringMVC.md)
+- [MyBatis](https://github.com/msJavaCoder/msJava/blob/master/docs/框架/MyBatis.md)
+- [SpringBoot](https://github.com/msJavaCoder/msJava/blob/master/docs/框架/SpringBoot.md)
 ---
 
 ### 📰  数据库
@@ -112,6 +112,8 @@
 - [MySQL面试题汇总](https://github.com/msJavaCoder/msJava/blob/master/docs/面试题/MySQL面试题汇总.md)
 - [算法常用面试题汇总](https://github.com/msJavaCoder/msJava/blob/master/docs/面试题/算法常用面试题汇总.md)
 - [JVM面试题汇总](https://github.com/msJavaCoder/msJava/blob/master/docs/面试题/JVM面试题汇总.md)
+- [设计模式常见面试题汇总](https://github.com/msJavaCoder/msJava/blob/master/docs/面试题/设计模式常见面试题汇总.md)
+- [分布式框架面试题汇总](https://github.com/msJavaCoder/msJava/blob/master/docs/面试题/分布式框架面试题汇总.md)
 
 ---
 
