@@ -20,12 +20,19 @@
 - [Java关键字理解](https://github.com/msJavaCoder/msJava/blob/master/docs/java/Java关键字理解.md)
 - [浅克隆和深克隆](https://github.com/msJavaCoder/msJava/blob/master/docs/java/浅克隆和深克隆.md)
 - [理解动态代理](https://github.com/msJavaCoder/msJava/blob/master/docs/java//理解动态代理.md)
+- [理解抽象类与接口](https://github.com/msJavaCoder/msJava/blob/master/docs/java//理解抽象类与接口.md)
+- [理解异常处理](https://github.com/msJavaCoder/msJava/blob/master/docs/java//理解异常处理.md)
+- [理解IO](https://github.com/msJavaCoder/msJava/blob/master/docs/java//IO.md)
+- [理解内部类与枚举类](https://github.com/msJavaCoder/msJava/blob/master/docs/java//各种内部类和枚举类.md)
+- [理解克隆与序列化应用](https://github.com/msJavaCoder/msJava/blob/master/docs/java//理解克隆与序列化应用.md)
+
 
 ---
 
 ### ⭕  集合
 
-- [Java集合容器有哪些？](https://github.com/msJavaCoder/msJava/blob/master/docs/java/Java集合容器.md)
+- [理解集合Collection](https://github.com/msJavaCoder/msJava/blob/master/docs/java/理解集合Collection.md)
+- [理解集合Map](https://github.com/msJavaCoder/msJava/blob/master/docs/java/理解集合Map.md)
 - [HashMap原理分析](https://github.com/msJavaCoder/msJava/blob/master/docs/java/HashMap原理分析.md)
 - [HashMap为什么是线程不安全的](https://github.com/msJavaCoder/msJava/blob/master/docs/java/HashMap为什么是线程不安全的.md)
 - [ConcurrentHashMap实现原理](https://github.com/msJavaCoder/msJava/blob/master/docs/java/ConcurrentHashMap实现原理.md)
@@ -35,6 +42,7 @@
 
 ### 🔐  多线程
 - [Java中的锁](https://github.com/msJavaCoder/msJava/blob/master/docs/java/Java中的锁.md)
+- [理解ThreadLocal](https://github.com/msJavaCoder/msJava/blob/master/docs/java/理解ThreadLocal.md)
 - [理解synchronized关键字](https://github.com/msJavaCoder/msJava/blob/master/docs/java/理解synchronized关键字.md)
 - [Java线程池](https://github.com/msJavaCoder/msJava/blob/master/docs/java/Java线程池.md)
 
