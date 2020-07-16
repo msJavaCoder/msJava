@@ -23,7 +23,7 @@
 - [理解类与Object](https://github.com/msJavaCoder/msJava/blob/master/docs/java/理解类与Object.md)
 - [理解泛型与迭代器](https://github.com/msJavaCoder/msJava/blob/master/docs/java/理解泛型与迭代器.md)
 - [理解Java关键字](https://github.com/msJavaCoder/msJava/blob/master/docs/java/Java关键字理解.md)
-- [深入理解字符串](https://github.com/msJavaCoder/msJava/blob/master/docs/java/深入理解字符串.md)
+- [理解字符串](https://github.com/msJavaCoder/msJava/blob/master/docs/java/深入理解字符串.md)
 - [浅克隆和深克隆](https://github.com/msJavaCoder/msJava/blob/master/docs/java/浅克隆和深克隆.md)
 - [理解动态代理](https://github.com/msJavaCoder/msJava/blob/master/docs/java//理解动态代理.md)
 - [理解抽象类与接口](https://github.com/msJavaCoder/msJava/blob/master/docs/java//理解抽象类与接口.md)

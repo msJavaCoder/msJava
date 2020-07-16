@@ -6,7 +6,7 @@
   * [理解类与Object](./docs/java/理解类与Object.md)
   * [理解泛型与迭代器](./docs/java/理解泛型与迭代器.md)
   * [理解Java关键字](./docs/java/Java关键字理解.md)
-  * [深入理解字符串](./docs/java/深入理解字符串.md)
+  * [理解字符串](./docs/java/深入理解字符串.md)
   * [理解动态代理](./docs/java/理解动态代理.md)
   * [理解抽象类与接口](./docs/java/理解抽象类与接口.md)
   * [理解异常处理](./docs/java/理解异常处理.md)
