@@ -1,11 +1,5 @@
 # Redis为什么会这么快？
 
-本文中我们探讨一下几个问题：
-
-1. Redis 是什么，为什么使用 Redis 会非常快？
-2. Redis 支持的数据类型都有哪些？
-3. 如何通过 Python 和 Redis 进行交互？
-
 ## 关于Redis
 
 **Redis 全称是 REmote DIctionary Server，从名字中你也能看出来它用字典结构存储数据，也就是 key-value 类型的数据。Redis 的查询效率非常高，根据官方提供的数据，Redis 每秒最多处理的请求可以达到 10 万次。**
