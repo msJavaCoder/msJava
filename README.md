@@ -110,7 +110,7 @@
 
 ### 🗽  Redis
 
-- [TODO]
+- [Redis为什么会这么快](https://github.com/msJavaCoder/msJava/blob/master/docs/Redis/Redis为什么会这么快.md)
 
 ---
 

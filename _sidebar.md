@@ -30,12 +30,6 @@
   * [理解Java中的各种锁](./docs/java/理解Java中的各种锁.md)
   * [理解线程池](./docs/java/理解线程池.md)
   
-* 框架
-  * [Spring框架](./docs/框架/Spring.md)
-  * [SpringMVC框架](./docs/框架/SpringMVC.md)
-  * [MyBatis框架](./docs/框架/MyBatis.md)
-  * [SpringBoot框架](./docs/框架/SpringBoot.md)
-  
 * JVM
   * [垃圾回收器](./docs/jvm/垃圾回收器.md)
   * [垃圾回收算法](./docs/jvm/垃圾回收算法.md)
@@ -43,6 +37,12 @@
   * [Java内存模型](./docs/jvm/Java内存模型.md)
   * [Java运行时内存划分](./docs/jvm/Java运行时内存划分.md)
   * [JVM确认可回收对象的方式](./docs/jvm/JVM确认可回收对象的方式.md)
+  
+* 框架
+  * [Spring框架](./docs/框架/Spring.md)
+  * [SpringMVC框架](./docs/框架/SpringMVC.md)
+  * [MyBatis框架](./docs/框架/MyBatis.md)
+  * [SpringBoot框架](./docs/框架/SpringBoot.md)
 
 * 数据库
   * [SQL进阶](./docs/database/SQL进阶.md)
@@ -54,6 +54,9 @@
   * [B树与B+树详谈](./docs/database/B树与B+树详谈.md)
   * [Hash索引与B+树索引的区别](./docs/database/Hash索引与B+树索引的区别.md)
   * [如何使用EXPLAIN查看执行计划](./docs/database/如何使用EXPLAIN查看执行计划.md) 
+  
+* Redis
+  * [Redis为什么会这么快](./docs/Redis/Redis为什么会这么快.md)
   
 * 面试题
   * [Java核心面试题汇总](./docs/Interviewquestions/Java核心面试题汇总.md)
