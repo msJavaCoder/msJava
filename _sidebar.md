@@ -52,7 +52,7 @@
   * [常见SQL优化方式](./docs/database/常见SQL优化方式.md)
   * [MySQL基础概念](./docs/database/MySQL.md)
   * [如何使用索引](./docs/database/如何使用索引.md)
-  * [什么情况下索引会失效](./docs/database/什么情况下索引会失效.md)
+  * [什么情况下索引会失效](./docs/database/什么情况下索引失效.md)
   * [什么时候不需要创建索引](./docs/database/什么时候不需要创建索引.md)
   * [B树与B+树详谈](./docs/database/B树与B+树详谈.md)
   * [Hash索引与B+树索引的区别](./docs/database/Hash索引与B+树索引的区别.md)
