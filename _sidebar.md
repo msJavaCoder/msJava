@@ -19,7 +19,7 @@
   * [理解集合Collection](./docs/java/理解集合Collection.md)
   * [理解集合Map](./docs/java/理解集合Map.md)
   * [HashMap原理分析](./docs/java/HashMap原理分析.md)
-  * [HashMap为什么是线程不安全的.md](./docs/java/HashMap为什么是线程不安全的.md)
+  * [HashMap为什么是线程不安全的](./docs/java/HashMap为什么是线程不安全的.md)
   * [ConcurrentHashMap实现原理](./docs/java/ConcurrentHashMap实现原理.md)
   
 * Java源码分析
