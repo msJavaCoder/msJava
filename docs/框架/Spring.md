@@ -5,7 +5,13 @@ Spring Framework 简称 Spring，是 Java 开发中最常用的框架，地位�
 
 ### Spring 介绍
 
-Spring 是一个开源框架，为了解决企业应用程序开发复杂性而创建的，Spring 的概念诞生于 2002 年，于 2003 年正式发布第一个版本 Spring Framework 0.9。下面一起来看 Spring 各个版本的更新特性和它的发展变化吧。
+Spring 是一个开源框架，为了解决企业应用程序开发复杂性而创建的，Spring 的概念诞生于 2002 年，于 2003 年正式发布第一个版本 Spring Framework 0.9。下面一起来看 Spring 各个版本的更新特性和它的发展变化吧。Spring 特性如下图所示：
+
+<img src="C:\Users\孙白胖的爸爸\AppData\Roaming\Typora\typora-user-images\image-20200720165026696.png" alt="image-20200720165026696" style="zoom: 50%;" />
+
+Spring 模块如下图所示：
+
+<img src="C:\Users\孙白胖的爸爸\AppData\Roaming\Typora\typora-user-images\image-20200720165200616.png" alt="image-20200720165200616" style="zoom: 67%;" />
 
 #### Spring 1.x
 
@@ -40,8 +46,7 @@ Spring 核心包括以下三个方面：
 
 #### 控制反转（IoC）
 
-控制反转（Inversion of Control，IoC），顾名思义所谓的控制反转就是把创建对象的权利交给框架去控制，而不需要人为地去创建，这样就实现了可插拔式的接口编程，有效地降低代码的耦合度，降低了扩展和维护的成本。
-比如，你去某地旅游不再用自己亲自为订购 A 酒店还是 B 酒店而发愁了，只需要把住店的需求告诉给某个托管平台，这个托管平台就会帮你订购一个既便宜又舒适的酒店，而这个帮你订购酒店的行为就可以称之为控制反转。
+控制反转（Inversion of Control，IoC），Spring的控制反转指一个对象依赖的其他对象将会在容器的初始化完成后主动将其依赖的对象传递给它，而不需要这个对象自己创建或者查找其依赖的对象。Spring基于控制反转技术实现系统对象之间依赖的解耦。
 
 #### 依赖注入（DI）
 
