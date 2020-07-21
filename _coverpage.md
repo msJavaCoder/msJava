@@ -1,5 +1,4 @@
 <h1 align="center">Java后端面试核心知识体系</h1>
-
 <h2>祝您早日收获心仪offer😀</h2>
 
 ![QQ群](https://img.shields.io/badge/QQ%E7%BE%A4-660108379-yellowgreen.svg)
