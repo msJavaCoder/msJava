@@ -384,7 +384,4 @@ public V get(Object key) {
 
 ## 5 总结
 
-本文摘取 ConcurrentHashMap 两个核心的方法讲解了一下，特别是 put 方法，采取了很多手段来保证了线程安全，是平时面试时的重中之重，大家可以尝试 debug 来调试一下源码，其他方法感兴趣的话，可以尝试去 GitHub 上去查看源码。
-
-[
-  ](https://www.imooc.com/read/47/article/857)
+本文摘取 ConcurrentHashMap 两个核心的方法讲解了一下，特别是 put 方法，采取了很多手段来保证了线程安全，是平时面试时的重中之重，大家可以尝试 debug 来调试一下源码。
