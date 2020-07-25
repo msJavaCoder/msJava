@@ -33,12 +33,16 @@ public class Main {
             swap(chars, n, chars.length - 1);
             return new String(chars);
         }
-        public static void main(String[] args) {
+      /*  public static void main(String[] args) {
             Scanner input=new Scanner(System.in);
             String str = input.nextLine();
             //移动位数
             int N = input.nextInt();
             System.out.println(new Main().moveString(str,N));
-        }
+        }*/
 
+
+    public static void main(String[] args) {
+        System.out.println(3*0.1);
+    }
 }
