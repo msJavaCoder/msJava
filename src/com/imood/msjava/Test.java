@@ -43,17 +43,5 @@ public class Test {
      ListNode(int x) { val = x; }
     }
 
-    public static void main(String[] args) {
-        String abc = new String("abc");
-
-        String abc1 = new String("abc");
-
-
-        System.out.println(abc==abc1);
-        System.out.println(abc.equals(abc1));
-
-
-    }
-
 
 }
