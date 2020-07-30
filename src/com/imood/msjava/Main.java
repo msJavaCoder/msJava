@@ -1,8 +1,5 @@
 package com.imood.msjava;
 
-
-import java.util.Scanner;
-
 /**
  * @description:  三次反转实现字符串循环右边移动N位
  * @author: msJava

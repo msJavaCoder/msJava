@@ -56,8 +56,6 @@
   * [SpringBoot框架](./docs/框架/SpringBoot.md)
 
 * 数据库
-  * [SQL进阶](./docs/database/SQL进阶.md)
-  * [常见SQL优化方式](./docs/database/常见SQL优化方式.md)
   * [MySQL基础概念](./docs/database/MySQL.md)
   * [如何使用索引](./docs/database/如何使用索引.md)
   * [什么情况下索引会失效](./docs/database/什么情况下索引失效.md)
@@ -65,6 +63,11 @@
   * [B树与B+树详谈](./docs/database/B树与B+树详谈.md)
   * [Hash索引与B+树索引的区别](./docs/database/Hash索引与B+树索引的区别.md)
   * [如何使用EXPLAIN查看执行计划](./docs/database/如何使用EXPLAIN查看执行计划.md) 
+
+* SQL
+  * [SQL进阶](./docs/database/SQL进阶.md)
+  * [常见SQL优化方式](./docs/database/常见SQL优化方式.md)
+  * [SQL经典笔试题目](./docs/database/SQL经典笔试题目.md)
   
 * Redis
   * [Redis为什么会这么快](./docs/Redis/Redis为什么会这么快.md)

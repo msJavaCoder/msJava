@@ -62,6 +62,10 @@ public class Stack<E> {
     }
 
 
+    public boolean isEmpty(){
+        return  maxSize==0;
+    }
+
 
 
 
