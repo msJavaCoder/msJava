@@ -88,75 +88,177 @@ insert into SC values('07' , '02' , 89);
 insert into SC values('07' , '03' , 98);
 ```
 
+## 2.SQL题目(1~10)
 
+###  2.1 第一题
 
-- 查询所有同学的学号、姓名、选课数、总成绩；
+> 查询“01”课程比“02”课程成绩高的所有学生的学号；
 
 ```sql
-
+select t1.sid
+from 
+    (select sid,score from sc where cid='01') as t1
+join 
+    (select sid,score from sc where cid='02') as t2
+on t1.sid=t2.sid and t1.score > t2.score
 ```
 
+### 2.2 第二题
 
-
-- 查询平均成绩大于60分的同学的学号和平均成绩；
+> 查询平均成绩大于60分的同学的学号和平均成绩；
 
 ```sql
 select sid,avg(score) as avgscore
 from sc
-group by score
+group by sid
 having avgscore > 60
 ```
 
-- 查询“01”课程比“02”课程成绩高的所有学生的学号；
+### 2.3 第三题
+
+>查询所有同学的学号、姓名、选课数、总成绩;
 
 ```sql
-SELECT t1.sid
-FROM
-	(select sid,score
-	from sc
-	where cid = '01') as t1
-JOIN
-	(select sid,score
-	from sc
-	where cid = '02') as t2
-ON t1.sid = t2.sid and t1.score>t2.score
+select t1.sid , t1.sname , t2.cnt , t2.total_score
+from 
+    ( select sid,sname from student group by sid) as t1
+join 
+    (select sid,count(*) as cnt , sum(score) as total_score from sc group by sid ) as t2
+on t1.sid=t2.sid
 ```
 
-- 查询学过编号“01”并且也学过编号“02”课程的同学的学号、姓名；
-- 查询姓“李”的老师的个数；
+### 2.4 第四题
+
+> 查询姓“李”的老师的个数;
 
 ```sql
-select * from teacher where tname like "李%"
+select count(*) as count
+from teacher 
+where tname like "李%"
 ```
 
-- 查询没学过“张三”老师课的同学的学号、姓名；
+### 2.5 第五题
+
+> 查询没学过“张三”老师课的同学的学号、姓名；
 
 ```sql
 select distinct sid,sname
 from student 
 where sid not in (
-    select sid from sc 
-    join course as c on sc.cid=c.cid
-    join teacher as t on c.tid=t.tid
-    where t.tname='张三'
+    select sid 
+    from sc s
+    left join course as c on s.cid =c.cid 
+    left join teacher as t on c.tid =t.tid 
+    where tname = '张三'
+) 
+```
+
+### 2.6 第六题
+
+> 查询学过编号“01”并且也学过编号“02”课程的同学的学号、姓名；**（类比题目1）**
+
+```sql
+select sid ,sname
+from student 
+where sid in 
+(
+   select distinct t1.sid
+   from 
+     ( select sid,score from sc where cid ='01') as t1
+   join 
+     ( select sid,score from sc where cid ='02') as t2
+   on t1.sid=t2.sid
 )
 ```
 
-- 查询学过“张三”老师所教的课的同学的学号、姓名；
+### 2.7 第七题
+
+> 查询学过“张三”老师所教的课的同学的学号、姓名；**（类比题目5）**
 
 ```sql
 select distinct sid,sname
 from student 
 where sid in (
-    select sid from sc 
-    join course as c on sc.cid=c.cid
-    join teacher as t on c.tid=t.tid
-    where t.tname='张三'
+    select sid 
+    from sc s
+    left join course as c on s.cid =c.cid 
+    left join teacher as t on c.tid =t.tid 
+    where tname = '张三'
+) 
+```
+
+### 2.8 第八题
+
+> 查询课程编号“01”的成绩比课程编号“02”课程低的所有同学的学号、姓名；**（类比题目1和题目6）**
+
+```sql
+select sid ,sname
+from student 
+where sid in 
+(
+   select distinct t1.sid
+   from 
+     ( select sid,score from sc where cid ='01') as t1
+   join 
+     ( select sid,score from sc where cid ='02') as t2
+   on t1.sid=t2.sid and t1.score < t2.score
 )
 ```
 
-- 查询课程编号“01”的成绩比课程编号“02”课程低的所有同学的学号、姓名;
-- 查询**所有课程**成绩小于60分的同学的学号、姓名；
-- 查询没有学全所有课的同学的学号、姓名；
-- 
+### 2.9 第九题
+
+> 查询**所有课程**成绩小于60分的同学的学号、姓名；
+
+```sql
+select distinct sid ,sname
+from student 
+where sid in (
+    select sid from sc where score<60
+)
+```
+
+### 2.10 第十题
+
+> 查询没有学全所有课的同学的学号、姓名；
+
+```sql
+select s.sid ,s.sname
+from student as s
+left join sc 
+on sc.sid = s.sid 
+group by s.sid 
+having count(sc.cid ) < 3
+```
+
+## 3.SQL题目(11~20)
+
+### 3.1 第十一道
+
+> 查询至少有一门课与学号为“01”的同学所学相同的同学的学号和姓名；
+
+```sql
+
+```
+
+### 3.2 第十二道
+
+> 查询和"01"号的同学学习的课程完全相同的其他同学的学号和姓名;
+
+### 3.3 第十三道
+
+### 3.4 第十四道
+
+### 3.5 第十五道
+
+### 3.6 第十六道
+
+### 3.7 第十七道
+
+### 3.8 第十八道
+
+### 3.9 第十九道
+
+### 3.10 第二十道
+
+
 
