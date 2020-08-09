@@ -16,6 +16,8 @@ public class Test {
      */
     public int kthToLast(ListNode head, int N) {
         //双指针法
+
+        int a;
         ListNode pre=head;
         ListNode low=head;
         if(head.next==null){

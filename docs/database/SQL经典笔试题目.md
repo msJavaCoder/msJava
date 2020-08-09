@@ -237,12 +237,23 @@ having count(sc.cid ) < 3
 > 查询至少有一门课与学号为“01”的同学所学相同的同学的学号和姓名；
 
 ```sql
-
+select distinct sc.sid,sname
+from sc
+join student as s
+on sc.sid=s.sid
+where cid in 
+          (select distinct cid from sc where sid='01')
 ```
 
 ### 3.2 第十二道
 
 > 查询和"01"号的同学学习的课程完全相同的其他同学的学号和姓名;
+
+```sql
+
+```
+
+
 
 ### 3.3 第十三道
 
