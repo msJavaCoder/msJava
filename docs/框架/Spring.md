@@ -1,38 +1,14 @@
 ## Spring
 
-Spring Framework 简称 Spring，是 Java 开发中最常用的框架，地位仅次于 Java API，就连近几年比较流行的微服务框架 SpringBoot，也是基于 Spring 实现的，SpringBoot 的诞生是为了让开发者更方便地使用 Spring，因此 Spring 在 Java 体系中的地位可谓首屈一指。
-当然，如果想要把 Spring 所有功能都讲的一清二楚，远远不是一两篇文章能够做到的，但幸运的是，Spring 的基础资料可以很轻易的搜索到，那么我们本讲主要的目的就是把 Spring 中的核心知识点和常见面试题分享给大家，希望对大家能有所帮助。
-
 ### Spring 介绍
 
-Spring 是一个开源框架，为了解决企业应用程序开发复杂性而创建的，Spring 的概念诞生于 2002 年，于 2003 年正式发布第一个版本 Spring Framework 0.9。下面一起来看 Spring 各个版本的更新特性和它的发展变化吧。Spring 特性如下图所示：
+Spring 是一个开源框架，为了解决企业应用程序开发复杂性而创建的，Spring 的概念诞生于 2002 年，于 2003 年正式发布第一个版本 Spring Framework 0.9。下面一起来看 Spring 各个版本的更新特性和它的发展变化吧。
 
-<img src="C:\Users\孙白胖的爸爸\AppData\Roaming\Typora\typora-user-images\image-20200720165026696.png" alt="image-20200720165026696" style="zoom: 50%;" />
+![img](http://s0.lgstatic.com/i/image2/M01/8A/C6/CgoB5l14puyAXsN8AAB-CNBQpnQ843.png)
 
-Spring 模块如下图所示：
+图中红框框住的是比较重要的组件，Core 组件是 Spring 所有组件的核心；Bean 组件和 Context 组件我刚才提到了，是实现 IoC 和依赖注入的基础；AOP 组件用来实现面向切面编程；Web 组件包括 SpringMVC，是 Web 服务的控制层实现。
 
-<img src="C:\Users\孙白胖的爸爸\AppData\Roaming\Typora\typora-user-images\image-20200720165200616.png" alt="image-20200720165200616" style="zoom: 67%;" />
-
-#### Spring 1.x
-
-此版本主要是为了解决企业应用程序开发复杂性而创建的，当时 J2EE 应用的经典架构是分层架构：表现层、业务层、持久层，最流行的组合就是 SSH（Struts、Spring、Hibernate）。
-Spring 1.x 仅支持基于 XML 的配置，确保用户代码不依赖 Spring，它主要包含了以下功能模块：aop、beans、ejb、jdbc、jndi、orm、transation、validation、web 等。
-
-#### Spring 2.x
-
-Spring 2.x 的改动并不是很大，主要是在 Spring 1.x 的基础上增加了几个新模块，如 ehcache、jms、jmx、scripting、stereotype 等。
-
-#### Spring 3.x
-
-Spring 3.x 开始不止支持 XML 的配置，还扩展了基于 Java 类的配置，还增加了 Expression、Instructment、Tomcat、oxm 等组件，同时将原来的 Web 细分为：Portlet、Servlet。
-
-#### Spring 4.x
-
-Spring 4.x 扩充了 Groovy、Messaging、WebMvc、Tiles2、WebSocket 等功能组件，同时 Spring 还适配了 Java 版本，全面支持 Java 8.0、Lambda 表达式等。随着 RESTful 架构风格被越来越多的用户所采用，Spring 4.x 也提供了 RestController 等注解新特性。
-
-#### Spring 5.x
-
-Spring 5.x 紧跟 Java 相关技术的更新迭代，不断适配 Java 的新版本，同时不断重构优化自身核心框架代码，支持函数式、响应式编程模型等。
+<img src="http://s0.lgstatic.com/i/image2/M01/8A/C6/CgoB5l14puyAK0COAAGd_8jLTtQ986.png" alt="img" style="zoom:80%;" />
 
 ### Spring 核心
 
@@ -46,7 +22,17 @@ Spring 核心包括以下三个方面：
 
 #### 控制反转（IoC）
 
-控制反转（Inversion of Control，IoC），Spring的控制反转指一个对象依赖的其他对象将会在容器的初始化完成后主动将其依赖的对象传递给它，而不需要这个对象自己创建或者查找其依赖的对象。Spring基于控制反转技术实现系统对象之间依赖的解耦。
+控制反转（Inversion of Control，IoC），Spring的控制反转指一个对象依赖的其他对象将会在容器的初始化完成后主动将其依赖的对象传递给它，而不需要这个对象自己创建或者查找其依赖的对象。Spring基于控制反转技术实现系统对象之间依赖的解耦。举个例子如下图，拿公司招聘岗位来举例。假设一个公司有产品、研发、测试等岗位。如果是公司根据岗位要求，逐个安排人选，如图中向下的箭头，这是正向流程。如果反过来，不用公司来安排候选人，而是由第三方猎头来匹配岗位和候选人，然后进行推荐，如图中向上的箭头，这就是控制反转。
+
+![img](http://s0.lgstatic.com/i/image2/M01/8A/E6/CgotOV14puyAODLyAAAnwOuTkEk368.png)
+
+在 Spring 中，对象的属性是由对象自己创建的，就是正向流程；如果属性不是对象创建，而是由 Spring 来自动进行装配，就是控制反转。这里的 DI 也就是依赖注入，就是实现控制反转的方式。正向流程导致了对象于对象之间的高耦合，IoC 可以解决对象耦合的问题，有利于功能的复用，能够使程序的结构变得非常灵活。
+
+#### Context 和 Bean
+
+Spring 进行 IoC 实现时使用的两个概念：Context 上下文和 Bean。如下图所示，所有被 Spring 管理的、由 Spring 创建的、用于依赖注入的对象，就叫作一个 Bean。Spring 创建并完成依赖注入后，所有 Bean 统一放在一个叫作 Context 的上下文中进行管理。
+
+![img](http://s0.lgstatic.com/i/image2/M01/8A/C6/CgoB5l14puyAWtEwAAA9kZ-6cDw595.png)
 
 #### 依赖注入（DI）
 
@@ -469,6 +455,8 @@ public void save() {
 #### 16.说一下 Spring 中 Bean 的生命周期？
 
 答：Spring 中 Bean 的生命周期如下：
+
+![img](http://s0.lgstatic.com/i/image2/M01/8A/C6/CgoB5l14puyAAa1gAABPP0lufvQ678.png)
 
 - ① 实例化 Bean：对于 BeanFactory 容器，当客户向容器请求一个尚未初始化的 Bean 时，或初始化 Bean 的时候需要注入另一个尚未初始化的依赖时，容器就会调用 createBean 进行实例化。对于 ApplicationContext 容器，当容器启动结束后，通过获取 BeanDefinition 对象中的信息，实例化所有的 Bean；
 - ② 设置对象属性（依赖注入）：实例化后的对象被封装在 BeanWrapper 对象中，紧接着 Spring 根据 BeanDefinition 中的信息以及通过 BeanWrapper 提供的设置属性的接口完成依赖注入；
