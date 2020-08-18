@@ -45,7 +45,8 @@
   * [垃圾回收器](./docs/jvm/垃圾回收器.md)
   * [垃圾回收算法](./docs/jvm/垃圾回收算法.md)
   * [类加载机制](./docs/jvm/类加载机制.md)
-  * [Java内存模型](./docs/jvm/Java内存模型.md)
+  * [JMM内存可见性](./docs/jvm/JMM内存可见性.md)
+  * [JMM保证](./docs/jvm/JMM保证.md)
   * [Java运行时内存划分](./docs/jvm/Java运行时内存划分.md)
   * [JVM确认可回收对象的方式](./docs/jvm/JVM确认可回收对象的方式.md)
   

@@ -68,7 +68,9 @@
 - [垃圾回收器](https://github.com/msJavaCoder/msJava/blob/master/docs/jvm/垃圾回收器.md)
 - [垃圾回收算法](https://github.com/msJavaCoder/msJava/blob/master/docs/jvm/垃圾回收算法.md)
 - [JVM确认可回收对象的方式](https://github.com/msJavaCoder/msJava/blob/master/docs/jvm/JVM确认可回收对象的方式.md)
-- [Java内存模型](https://github.com/msJavaCoder/msJava/blob/master/docs/jvm/Java内存模型.md)
+- [JMM内存可见性](https://github.com/msJavaCoder/msJava/blob/master/docs/jvm/JMM内存可见性.md)
+- [JMM保证](https://github.com/msJavaCoder/msJava/blob/master/docs/jvm/JMM保证.md)
+
 
 ---
 
