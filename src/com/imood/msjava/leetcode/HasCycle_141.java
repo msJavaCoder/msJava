@@ -7,24 +7,25 @@ package com.imood.msjava.leetcode;
  */
 public class HasCycle_141 {
     /**
-     *   使用双指针，一个指针每次移动一个节点，一个指针每次移动两个节点，如果存在环，那么这两个指针一定会相遇。
+     * 使用双指针，一个指针每次移动一个节点，一个指针每次移动两个节点，如果存在环，那么这两个指针一定会相遇。
+     *
      * @param head
      * @return
      */
     public boolean hasCycle(ListNode head) {
-        if(head==null){
+        if (head == null) {
             return false;
         }
 
-        ListNode low=head;
-        ListNode high=head.next;
+        ListNode low = head;
+        ListNode high = head.next;
 
-        while (low!=null && high!=null && high.next!=null){
-            if(low==high){
+        while (low != null && high != null && high.next != null) {
+            if (low == high) {
                 return true;
             }
-            low=low.next;
-            high=high.next;
+            low = low.next;
+            high = high.next;
         }
         return false;
     }

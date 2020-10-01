@@ -3,61 +3,62 @@
 <head>
   <meta charset="UTF-8">
   <title>码上Java</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
   <meta name="description" content="Description">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/pure.css">
 </head>
 <body>
-  <div id="app"></div>
-  <script>
-    // 离线支持
-    if (typeof navigator.serviceWorker !== 'undefined') {
-      navigator.serviceWorker.register('sw.js')
-    }
-    
-    window.$docsify = {
-      name: '🔥码上Java',
-      repo: 'https://github.com/msJavaCoder/msJava',
-      maxLevel: 5,//最大支持渲染的标题层级
-      subMaxLevel: 0,
-      homepage:"README.md",
-      coverpage: true,
-      loadSidebar: true,
-      auto2top: true,//切换页面后是否自动跳转到页面顶部
-      search: {
-             //maxAge: 86400000, // 过期时间，单位毫秒，默认一天
-       paths: 'auto',
-       placeholder: ' 🔍 Type to search',
-       noData: '😞 No Results!',
-       depth: 3,
-      },
-      pagination: {
-        previousText: '上一章',
-        nextText: '下一章',
-      },
-     
-    }
-  </script>
+<div id="app"></div>
+<script>
+  // 离线支持
+  if (typeof navigator.serviceWorker !== 'undefined') {
+    navigator.serviceWorker.register('sw.js')
+  }
 
-  <script>
-    if (typeof navigator.serviceWorker !== 'undefined') {
-      navigator.serviceWorker.register('sw.js')
-    }
-  </script>
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
-  <!-- 全文搜索-->
-  <script src="https://cdn.bootcss.com/docsify/4.5.9/plugins/search.min.js"></script>
-  <!-- 复制到剪贴板 -->
-  <script src="//unpkg.com/docsify-copy-code"></script>
-  <!-- 图片缩放 -->
-  <script src="//unpkg.com/docsify/lib/plugins/zoom-image.js"></script>
-   <!--Java代码高亮-->
-   <script src="//unpkg.com/prismjs/components/prism-java.js"></script>
-  <!--分页插件-->
-  <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
-  <!--统计访问量插件-->
-  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  window.$docsify = {
+    name: '🔥码上Java',
+    repo: 'https://github.com/msJavaCoder/msJava',
+    maxLevel: 5,//最大支持渲染的标题层级
+    subMaxLevel: 0,
+    homepage: "README.md",
+    coverpage: true,
+    loadSidebar: true,
+    auto2top: true,//切换页面后是否自动跳转到页面顶部
+    search: {
+      //maxAge: 86400000, // 过期时间，单位毫秒，默认一天
+      paths: 'auto',
+      placeholder: ' 🔍 Type to search',
+      noData: '😞 No Results!',
+      depth: 3,
+    },
+    pagination: {
+      previousText: '上一章',
+      nextText: '下一章',
+    },
+
+  }
+</script>
+
+<script>
+  if (typeof navigator.serviceWorker !== 'undefined') {
+    navigator.serviceWorker.register('sw.js')
+  }
+</script>
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+<!-- 全文搜索-->
+<script src="https://cdn.bootcss.com/docsify/4.5.9/plugins/search.min.js"></script>
+<!-- 复制到剪贴板 -->
+<script src="//unpkg.com/docsify-copy-code"></script>
+<!-- 图片缩放 -->
+<script src="//unpkg.com/docsify/lib/plugins/zoom-image.js"></script>
+<!--Java代码高亮-->
+<script src="//unpkg.com/prismjs/components/prism-java.js"></script>
+<!--分页插件-->
+<script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+<!--统计访问量插件-->
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 </body>
 </html>

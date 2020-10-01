@@ -1,6 +1,7 @@
 package com.imood.msjava.数据结构;
 
 import java.util.Stack;
+
 /**
  * @description: 用栈实现队列
  * @author: 微信公众号：码上Java

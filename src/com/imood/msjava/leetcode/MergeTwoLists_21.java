@@ -9,6 +9,7 @@ public class MergeTwoLists_21 {
 
     /**
      * 归并两个有序的链表
+     *
      * @param l1
      * @param l2
      * @return
@@ -17,7 +18,7 @@ public class MergeTwoLists_21 {
         if (l1 == null) {
             return l2;
         }
-        if (l2 == null){
+        if (l2 == null) {
             return l1;
         }
 

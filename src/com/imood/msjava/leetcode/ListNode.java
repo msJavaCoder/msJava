@@ -6,10 +6,10 @@ package com.imood.msjava.leetcode;
  * @createDate: 2020/7/2/0002
  */
 public class ListNode {
-   int val;
-   ListNode next;
+    int val;
+    ListNode next;
 
-   public ListNode(int val){
-       this.val=val;
-   }
+    public ListNode(int val) {
+        this.val = val;
+    }
 }

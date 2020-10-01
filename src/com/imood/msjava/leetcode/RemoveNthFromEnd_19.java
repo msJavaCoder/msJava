@@ -8,7 +8,8 @@ package com.imood.msjava.leetcode;
 public class RemoveNthFromEnd_19 {
 
     /**
-     *  删除链表的倒数第 n 个节点  双指针
+     * 删除链表的倒数第 n 个节点  双指针
+     *
      * @param head
      * @param n
      * @return
@@ -19,7 +20,7 @@ public class RemoveNthFromEnd_19 {
         while (n-- > 0) {
             fast = fast.next;
         }
-        if (fast == null){
+        if (fast == null) {
             return head.next;
         }
         ListNode slow = head;

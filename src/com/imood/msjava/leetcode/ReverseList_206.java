@@ -8,7 +8,8 @@ package com.imood.msjava.leetcode;
 public class ReverseList_206 {
 
     /**
-     *  递归解决 —— 链表反转
+     * 递归解决 —— 链表反转
+     *
      * @param head
      * @return
      */

@@ -14,22 +14,23 @@ public class RunningSum {
 
     /**
      * 给你一个数组 nums 。数组「动态和」的计算公式为：runningSum[i] = sum(nums[0]…nums[i]) 。
-     *
+     * <p>
      * 请返回 nums 的动态和。
+     *
      * @param nums
      * @return
      */
     public static int[] runningSum(int[] nums) {
-        int temp=0;
+        int temp = 0;
         for (int i = 0; i < nums.length; i++) {
-            temp+=nums[i];
-            nums[i]=temp;
+            temp += nums[i];
+            nums[i] = temp;
         }
         return nums;
     }
 
     public static void main(String[] args) {
-        int[] arr={1,2,3,4,5};
+        int[] arr = {1, 2, 3, 4, 5};
         int[] ints = RunningSum.runningSum(arr);
 
         for (int i = 0; i < ints.length; i++) {
