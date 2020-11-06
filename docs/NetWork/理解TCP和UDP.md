@@ -30,7 +30,7 @@ TCP 之所以可以保证可靠性主要得益于两个方面，一个是“状�
 
  TCP 三次握手的执行流程，如下图所示：
 
-<img src="http://s0.lgstatic.com/i/image2/M01/8A/6E/CgotOV13hviAU5H3AAAyMppFmf8039.png" alt="img"  />
+<img src="https://img02.sogoucdn.com/app/a/100520146/dd6df6154e259897c25d924cacd8cffe" alt="img"  />
 
 TCP 三次握手的执行流程图
 
@@ -51,7 +51,7 @@ TCP 的三次握手执行流程如下：
 
  TCP 四次挥手的执行流程，如下图所示：
 
-![img](http://s0.lgstatic.com/i/image2/M01/8A/4E/CgoB5l13hviAZRJ1AABEfmQ55Jw991.png)
+![img](https://img01.sogoucdn.com/app/a/100520146/7bacaab50092f15af650aa33c70d81fb)
 
 TCP 的四次挥手执行流程如下：
 
