@@ -70,10 +70,10 @@
 
 * 面试题
   * [Java核心面试题汇总](docs/面试题/Java核心面试题汇总.md)
-  * [Spring核心面试题汇总](docs/面试题/Spring.md)
-  * [SpringBoot核心面试题汇总](docs/面试题/SpringBoot.md)
-  * [SpringMVC核心面试题汇总](docs/面试题/SpringMVC.md)
-  * [MyBatis核心面试题汇总](docs/面试题/MyBatis.md)
+  * [Spring核心面试题汇总](docs/面试题/Spring面试题汇总.md)
+  * [SpringBoot核心面试题汇总](docs/面试题/SpringBoot面试题汇总.md)
+  * [SpringMVC核心面试题汇总](docs/面试题/SpringMVC面试题汇总.md)
+  * [MyBatis核心面试题汇总](docs/面试题/MyBatis面试题汇总.md)
   * [MySQL面试题汇总](docs/面试题/MySQL面试题汇总.md)
   * [算法常用面试题汇总](docs/面试题/算法常用面试题汇总.md)
   * [JVM面试题汇总](docs/面试题/JVM面试题汇总.md)
