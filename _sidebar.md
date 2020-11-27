@@ -25,7 +25,6 @@
   
 * Java源码分析
   * [ArrayList源码分析](docs/Java源码分析/ArrayList源码分析.md)
-  * [LinkedList源码分析](docs/Java源码分析/LinkedList源码分析.md)
   * [HashMap源码分析](docs/Java源码分析/HashMap源码分析.md)
   * [TreeMap源码分析](docs/Java源码分析/TreeMap源码分析.md)
   * [HashSet与TreeSet源码分析](docs/Java源码分析/HashSet与TreeSet源码分析.md)
@@ -54,7 +53,6 @@
   * [垃圾回收器](docs/JVM/垃圾回收器.md)
   * [垃圾回收算法](docs/JVM/垃圾回收算法.md)
   * [类加载机制](docs/JVM/类加载机制.md)
-  * [Java内存模型](docs/JVM/Java内存模型.md)
   * [Java运行时内存划分](docs/JVM/Java运行时内存划分.md)
   * [JVM确认可回收对象的方式](docs/JVM/JVM确认可回收对象的方式.md)
 
@@ -84,5 +82,5 @@
   * [分布式框架面试题汇总](docs/面试题/分布式框架面试题合集.md)
   
 * 踩坑记录
-  * [Maven依赖成功导入但仍然报错找不到包解决方案](docs/踩坑记录/IDEA 2020 Maven依赖成功导入但仍然报错找不到包解决方案.md)
+  * [Maven依赖成功导入但仍然报错找不到包解决方案](docs/踩坑记录/IDEAMaven依赖成功导入但仍然报错找不到包解决方案.md)
 
