@@ -4,7 +4,7 @@
 
 以下是 Map 的继承关系图：
 
-![avatar](https://images.gitbook.cn/Fpy4Na_uWi3rK9M8kOcgYK7_uXrK)
+<img src="https://images.gitbook.cn/Fpy4Na_uWi3rK9M8kOcgYK7_uXrK" alt="avatar" style="zoom:80%;" />
 
 ### Map 简介
 

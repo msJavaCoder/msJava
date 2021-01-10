@@ -1,6 +1,6 @@
 ## 理解集合Collection
 
-先来看看集合的继承关系图，如下图所示：
+​		先来看看集合的继承关系图，如下图所示：
 
 ![enter image description here](https://images.gitbook.cn/ae489970-ca62-11e9-bd50-998f3938aecb)
 
@@ -18,250 +18,66 @@
 
 下面我们分别对集合类进行详细地介绍。
 
-### 集合使用
+### List ：可重复
 
-#### 1）Vector
+> List是一个非常常用的数据类型，一共有以下三种实现类，分别为：**Vector 、ArrayList、LinkedList** 。
 
-Vector 是 Java 早期提供的线程安全的有序集合，如果不需要线程安全，不建议使用此集合，毕竟同步是有线程开销的。
+#### Vector
 
-使用示例代码：
+​		Vector内部是基于数组实现，**线程安全**（synchronized关键字），也就是说在同一个时刻只能允许一个线程对Vector进行写操作，以保证在多线程环境下数据的一致性，但是频繁的进行加锁和释放锁操作，会导致Vector的**读写效率比较底** 。
 
-```
-Vector vector = new Vector();
-vector.add("dog");
-vector.add("cat");
-vector.remove("cat");
-System.out.println(vector);
-```
+#### ArrayList
 
-程序执行结果：`[dog]`
+​		ArrayList使用非常广泛，内部也是基于**数组**实现，**线程不安全**，ArrayList**不适合随机插入和删除的操作**，更**适合随机查找和遍历的操作**。
 
-#### 2）ArrayList
+#### LinkedList
 
-ArrayList 是最常见的非线程安全的有序集合，因为内部是数组存储的，所以随机访问效率很高，但非尾部的插入和删除性能较低，如果在中间插入元素，之后的所有元素都要后移。ArrayList 的使用与 Vector 类似。
+​		LinkedList采用**双向链表**结构存储元素，**随机插入和删除效率高**，**随机访问的效率低**。
 
-#### 3）LinkedList
+### Set : 不可重复
 
-LinkedList 是使用双向链表数据结构实现的，因此增加和删除效率比较高，而随机访问效率较差。
+> Set 的核心价值观就是独一无二，适合存储无序且值不相等的元素。对象的相等性本质上就是对象的HashCode值相等，在Java中根据对象的内存地址计算的对象的HashCode值。如果想要比较两个对象是否相等，则必然同时覆盖对象的hashCode方法和equals方法，并且hashCode方法和equals方法的返回值也必须一样。
 
-LinkedList 除了包含以上两个类的操作方法之外，还新增了几个操作方法，如 offer() 、peek() 等，具体详情，请参考以下代码：
+#### HashSet
 
-```
-LinkedList linkedList = new LinkedList();
-// 添加元素
-linkedList.offer("bird");
-linkedList.push("cat");
-linkedList.push("dog");
-// 获取第一个元素
-System.out.println(linkedList.peek());
-// 获取第一个元素，并删除此元素
-System.out.println(linkedList.poll());
-System.out.println(linkedList);
-```
+​		HashSet 是一个**没有重复元素**的集合，存放的是散列值，它按照元素的散列值来存取元素的。元素的散列值是通过元素的hashCode方法计算得到的，HashSet 首先判断两个元素的散列值是否相等，如果散列值相等，在用equals方法比较，如果equals也返回true，则是同一个元素，否则就不是同一个元素。虽然它是 Set 集合的子类，**基于 HashMap 的实现，**相关源码如下：
 
-程序的执行结果：
-
-```
-dog
-dog
-[cat, bird]
-```
-
-#### 4）HashSet
-
-HashSet 是一个没有重复元素的集合。虽然它是 Set 集合的子类，实际却为 HashMap 的实例，相关源码如下：
-
-```
+```java
 public HashSet() {
     map = new HashMap<>();
 }
 ```
 
-因此 HashSet 是无序集合，没有办法保证元素的顺序性。
+因此 HashSet 是**无序**集合，没有办法保证元素的顺序性。
 
-HashSet 默认容量为 16，每次扩充 0.75 倍，相关源码如下：
+**HashSet 默认容量为 16，每次扩充 0.75 倍**，相关源码如下：
 
-```
+```java
 public HashSet(Collection<? extends E> c) {
     map = new HashMap<>(Math.max((int) (c.size()/.75f) + 1, 16));
     addAll(c);
 }
 ```
 
-HashSet 的使用与 Vector 类似。
+#### TreeSet
 
-#### 5）TreeSet
+​		TreeSet 基于二叉树的原理对新添加的对象按照指定的顺序排序，每添加一个对象都会进行排序 ，并将对象插入二叉树的指定位置。
 
-TreeSet 集合实现了自动排序，也就是说 TreeSet 会把你插入数据进行自动排序。
+#### LinkedHashSet
 
-示例代码如下：
+​		LinkedHashSet 继承HashSet，HashMap实现数据存储，双向链表记录顺序。LinkedHashSet 底层使用的LinkedHashMap存储元素，它继承了HashMap。
 
-```
-TreeSet treeSet = new TreeSet();
-treeSet.add("dog");
-treeSet.add("camel");
-treeSet.add("cat");
-treeSet.add("ant");
-System.out.println(treeSet);
-```
+### Quenue
 
-程序执行结果：`[ant, camel, cat, dog]`
+​		Quenue是队列结构，Java中的常用队列如下：
 
-可以看出，TreeSet 的使用与 Vector 类似，只是实现了自动排序。
-
-#### 6）LinkedHashSet
-
-LinkedHashSet 是按照元素的 hashCode 值来决定元素的存储位置，但同时又使用链表来维护元素的次序，这样使得它看起来像是按照插入顺序保存的。
-
-LinkedHashSet 的使用与 Vector 类似。
-
-### 集合与数组
-
-集合和数组的转换可使用 toArray() 和 Arrays.asList() 来实现，请参考以下代码示例：
-
-```java
-List<String> list = new ArrayList();
-list.add("cat");
-list.add("dog");
-// 集合转数组
-String[] arr = list.toArray(new String[list.size()]);
-// 数组转集合
-List<String> list2 = Arrays.asList(arr);
-```
-
-集合与数组的区别，可以参考[「数组和排序算法的应用 + 面试题」](https://gitbook.cn/gitchat/column/5d493b4dcb702a087ef935d9/topic/5d4d7ea069004b174ccfffef)的内容。
-
-### 集合排序
-
-在 Java 语言中排序提供了两种方式：Comparable 和 Comparator，它们的区别也是常见的面试题之一。下面我们彻底地来了解一下 Comparable 和 Comparator 的使用与区别。
-
-#### 1）Comparable
-
-Comparable 位于 java.lang 包下，是一个排序接口，也就是说如果一个类实现了 Comparable 接口，就意味着该类有了排序功能。
-
-Comparable 接口只包含了一个函数，定义如下：
-
-```
-package java.lang;
-import java.util.*;
-public interface Comparable {
-  public int compareTo(T o);
-}
-```
-
-**Comparable 使用示例**，请参考以下代码：
-
-```xml
-class ComparableTest {
-    public static void main(String[] args) {
-        Dog[] dogs = new Dog[]{
-                new Dog("老旺财", 10),
-                new Dog("小旺财", 3),
-                new Dog("二旺财", 5),
-        };
-        // Comparable 排序
-        Arrays.sort(dogs);
-        for (Dog d : dogs) {
-            System.out.println(d.getName() + "：" + d.getAge());
-        }
-    }
-}
-class Dog implements Comparable<Dog> {
-    private String name;
-    private int age;
-    @Override
-    public int compareTo(Dog o) {
-        return age - o.age;
-    }
-    public Dog(String name, int age) {
-        this.name = name;
-        this.age = age;
-    }
-    public String getName() {
-        return name;
-    }
-    public int getAge() {
-        return age;
-    }
-}
-```
-
-程序执行结果：
-
-```
-小旺财：3
-二旺财：5
-老旺财：10
-```
-
-如果 Dog 类未实现 Comparable 执行代码会报程序异常的信息，错误信息为：
-
-> Exception in thread "main" java.lang.ClassCastException: xxx cannot be cast to java.lang.Comparable
->
-> compareTo() 返回值有三种：
-
-- e1.compareTo(e2) > 0 即 e1 > e2；
-- e1.compareTo(e2) = 0 即 e1 = e2；
-- e1.compareTo(e2) < 0 即 e1 < e2。
-
-#### 2）Comparator
-
-Comparator 是一个外部比较器，位于 java.util 包下，之所以说 Comparator 是一个外部比较器，是因为它无需在比较类中实现 Comparator 接口，而是要新创建一个比较器类来进行比较和排序。
-
-Comparator 接口包含的主要方法为 compare()，定义如下：
-
-```
-public interface Comparator<T> {
-  int compare(T o1, T o2);
-}
-```
-
-**Comparator 使用示例**，请参考以下代码：
-
-```xml
-class ComparatorTest {
-    public static void main(String[] args) {
-        Dog[] dogs = new Dog[]{
-                new Dog("老旺财", 10),
-                new Dog("小旺财", 3),
-                new Dog("二旺财", 5),
-        };
-        // Comparator 排序
-        Arrays.sort(dogs,new DogComparator());
-        for (Dog d : dogs) {
-            System.out.println(d.getName() + "：" + d.getAge());
-        }
-    }
-}
-class DogComparator implements Comparator<Dog> {
-    @Override
-    public int compare(Dog o1, Dog o2) {
-        return o1.getAge() - o2.getAge();
-    }
-}
-class Dog {
-    private String name;
-    private int age;
-    public Dog(String name, int age) {
-        this.name = name;
-        this.age = age;
-    }
-    public String getName() {
-        return name;
-    }
-    public int getAge() {
-        return age;
-    }
-}
-```
-
-程序执行结果：
-
-```
-小旺财：3
-二旺财：5
-老旺财：10
-```
+- ArrayBlockingQueue : 基于数组数据结构实现的有界阻塞队列。
+- LinkedBlockingQueue : 基于链表数据结构实现的有界阻塞队列。
+- PriorityBlockingQueue : 支持优先级排序的无界阻塞队列。
+- DelayQueue : 支持延迟操作的无界阻塞队列。
+- SynchronousQueue : 用于线程同步的阻塞队列。
+- LinkedTransferQueue : 基于链表数据结构实现的无界阻塞队列。
+- LinkedBlockingDeque : 基于链表数据结构实现双向阻塞队列。 吧
 
 ### 相关面试题
 
@@ -283,7 +99,7 @@ class Dog {
 
 Vector 默认容量源码：
 
-```
+```java
 public Vector() {
     this(10);
 }
@@ -291,13 +107,13 @@ public Vector() {
 
 ArrayList 默认容量源码：
 
-```
+```java
 private static final int DEFAULT_CAPACITY = 10;
 ```
 
 Vector 容量扩充默认增加 1 倍，源码如下：
 
-```
+```java
 private void grow(int minCapacity) {
     // overflow-conscious code
     int oldCapacity = elementData.length;
@@ -315,7 +131,7 @@ private void grow(int minCapacity) {
 
 ArrayList 容量扩充默认增加大概 0.5 倍（oldCapacity + (oldCapacity >> 1)），源码如下（JDK 8）：
 
-```
+```java
 private void grow(int minCapacity) {
     // overflow-conscious code
     int oldCapacity = elementData.length;
@@ -377,7 +193,7 @@ public boolean add(E e) {
 
 #### 10.执行以下程序会输出什么结果？为什么？
 
-```
+```java
 Integer num = 10;
 Integer num2 = 5;
 System.out.println(num.compareTo(num2));
@@ -385,7 +201,7 @@ System.out.println(num.compareTo(num2));
 
 答：程序输出的结果是 `1`，因为 Integer 默认实现了 compareTo 方法，定义了自然排序规则，所以当 num 比 num2 大时会返回 1，Integer 相关源码如下：
 
-```
+```java
 public int compareTo(Integer anotherInteger) {
     return compare(this.value, anotherInteger.value);
 }
@@ -398,7 +214,7 @@ public static int compare(int x, int y) {
 
 答：可以使用集合中的 Stack 实现，Stack 是标准的后进先出的栈结构，使用 Stack 中的 pop() 方法返回栈顶元素并删除该元素，示例代码如下。
 
-```
+```java
 Stack stack = new Stack();
 stack.push("a");
 stack.push("b");
