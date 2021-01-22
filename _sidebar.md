@@ -72,7 +72,11 @@
   * [如何使用EXPLAIN查看执行计划](docs/MySQL/如何使用EXPLAIN查看执行计划.md) 
   * ...
 
-* SpringBoot整合
+* SpringBoot专栏
+   * ...  
+
+
+* SpringBoot常用技术整合
    * [SpringBoot-MyBatisPlus](docs/SpringBoot/基于SpringBoot集成Mybatis-Plus实现代码生成器.md)
    * ...
 
