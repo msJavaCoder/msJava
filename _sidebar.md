@@ -74,10 +74,11 @@
 
 * SpringBoot专栏
    * [SpringBoot常用注解](docs/SpringBoot/SpringBoot的常用注解.md)
-
-
-* SpringBoot常用技术整合
    * [SpringBoot-MyBatisPlus](docs/SpringBoot/基于SpringBoot集成Mybatis-Plus实现代码生成器.md)
+   * ...
+
+* 设计模式
+   * [单例模式](docs/设计模式/单例模式.md)
    * ...
 
 * 面试题
