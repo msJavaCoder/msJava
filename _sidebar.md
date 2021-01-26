@@ -1,9 +1,3 @@
-* 网络
-  * [理解网络协议分层](docs/计算机网络/网络协议分层.md)
-  * [理解TCP和UDP](docs/计算机网络/理解TCP和UDP.md)
-  * [理解HTTP和HTTPS](docs/计算机网络/理解HTTP与HTTPS.md)
-  * ...
-
 * Java核心基础
   * [理解基本数据类型与包装类](docs/Java万岁/Java-基础不牢地动山摇/理解基本数据类型与包装类.md)
   * [理解类与Object](docs/Java万岁/Java-基础不牢地动山摇/理解类与Object.md)
@@ -18,7 +12,7 @@
   * [理解克隆与序列化应用](docs/Java万岁/Java-基础不牢地动山摇/理解克隆与序列化应用.md)
   * ...
  
-* 集合
+* Java集合
   * [理解集合Collection](docs/Java万岁/Java-基础不牢地动山摇/理解集合Collection.md)
   * [理解集合Map](docs/Java万岁/Java-基础不牢地动山摇/理解集合Map.md)
   * [理解HashMap底层实现原理](docs/Java万岁/Java-基础不牢地动山摇/理解HashMap底层实现原理.md)
@@ -52,7 +46,7 @@
   * [理解线程安全synchronized与ReentrantLock](docs/并发编程/理解线程安全synchronized与ReentrantLock.md)
   * ...
   
-* JVM
+* JVM虚拟机
   * [垃圾回收器](docs/JVM/垃圾回收器.md)
   * [垃圾回收算法](docs/JVM/垃圾回收算法.md)
   * [类加载机制](docs/JVM/类加载机制.md)
@@ -60,7 +54,7 @@
   * [JVM确认可回收对象的方式](docs/JVM/JVM确认可回收对象的方式.md)
   * ...
 
-* 数据库
+* MySQL数据库
   * [理解MySQL基础概念](docs/MySQL/MySQL基础概念.md)
   * [教你如何使用索引](docs/MySQL/如何使用索引.md)
   * [什么情况下索引会失效](docs/MySQL/什么情况下索引失效.md)
@@ -72,16 +66,26 @@
   * [如何使用EXPLAIN查看执行计划](docs/MySQL/如何使用EXPLAIN查看执行计划.md) 
   * ...
 
-* SpringBoot专栏
+* SpringBoot
    * [SpringBoot常用注解](docs/SpringBoot/SpringBoot的常用注解.md)
    * [SpringBoot-MyBatisPlus](docs/SpringBoot/基于SpringBoot集成Mybatis-Plus实现代码生成器.md)
    * ...
+
+* 算法与数据结构
+   * [常用算法](docs/算法/常用算法.md)
+   * ···
+
+* 网络
+  * [理解网络协议分层](docs/计算机网络/网络协议分层.md)
+  * [理解TCP和UDP](docs/计算机网络/理解TCP和UDP.md)
+  * [理解HTTP和HTTPS](docs/计算机网络/理解HTTP与HTTPS.md)
+  * ...
 
 * 设计模式
    * [单例模式](docs/设计模式/单例模式.md)
    * ...
 
-* 面试题
+* 面试题专栏
   * [Java核心面试题汇总](docs/面试题/Java核心面试题汇总.md)
   * [Spring核心面试题汇总](docs/面试题/Spring面试题汇总.md)
   * [SpringBoot核心面试题汇总](docs/面试题/SpringBoot面试题汇总.md)
