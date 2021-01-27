@@ -22,17 +22,17 @@
     name: '🔥码上Java',
     repo: 'https://github.com/msJavaCoder/msJava',
     maxLevel: 5,//最大支持渲染的标题层级+Z   z--
-    subMaxLevel: 0,
+    subMaxLevel: 0,  // 最大支持渲染的子标题层级   
     homepage: "README.md",
-    coverpage: true,
-    loadSidebar: true,
+    coverpage: true,  //开启封面
+    loadSidebar: true,  //开启侧边栏
     auto2top: true,//切换页面后是否自动跳转到页面顶部
     search: {
       //maxAge: 86400000, // 过期时间，单位毫秒，默认一天
       paths: 'auto',
       placeholder: ' 🔍 Type to search',
       noData: '😞 No Results!',
-      depth: 3,
+      depth: 3,  // 搜索标题的最大程级, 1 - 6
     },
     pagination: {
       previousText: '上一章',
@@ -45,6 +45,12 @@
 <script>
   if (typeof navigator.serviceWorker !== 'undefined') {
     navigator.serviceWorker.register('sw.js')
+  }
+  window.$docsify = {
+    loadSidebar: true,
+    alias: {
+      '/.*/_sidebar.md': '/_sidebar.md'
+    }
   }
 </script>
 <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
@@ -60,5 +66,7 @@
 <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
 <!--统计访问量插件-->
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<!-- 字数统计 -->
+<script src="//unpkg.com/docsify-count/dist/countable.js"></script>
 </body>
 </html>
