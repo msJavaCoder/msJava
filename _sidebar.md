@@ -1,3 +1,6 @@
+* Java开发手册
+  * [Java开发手册-嵩山版](docs/Java开发手册/Java开发手册嵩山版.md)
+  
 * Java核心基础
   * [理解基本数据类型与包装类](docs/Java万岁/Java-基础不牢地动山摇/理解基本数据类型与包装类.md)
   * [理解类与Object](docs/Java万岁/Java-基础不牢地动山摇/理解类与Object.md)
