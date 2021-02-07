@@ -1,26 +1,26 @@
-* Java开发手册
-  * [Java开发手册-嵩山版](docs/Java开发手册/Java开发手册嵩山版.md)
+* 规范牢记于心
+  * [Java开发手册-嵩山版-学习ing](docs/Java开发规范/Java开发手册嵩山版.md)
   
 * Java核心基础
-  * [理解基本数据类型与包装类](docs/Java万岁/Java-基础不牢地动山摇/理解基本数据类型与包装类.md)
-  * [理解类与Object](docs/Java万岁/Java-基础不牢地动山摇/理解类与Object.md)
-  * [理解泛型与迭代器](docs/Java万岁/Java-基础不牢地动山摇/理解泛型与迭代器.md)
-  * [理解Java关键字](docs/Java万岁/Java-基础不牢地动山摇/理解Java关键字.md)
-  * [理解String字符串](docs/Java万岁/Java-基础不牢地动山摇/理解String字符串.md)
-  * [理解动态代理](docs/Java万岁/Java-基础不牢地动山摇/理解动态代理.md)
-  * [理解抽象类与接口](docs/Java万岁/Java-基础不牢地动山摇/理解抽象类与接口.md)
-  * [理解异常处理](docs/Java万岁/Java-基础不牢地动山摇/理解异常处理.md)
-  * [理解数据结构队列](docs/Java万岁/Java-基础不牢地动山摇/理解数据结构队列.md)
-  * [理解内部类与枚举类](docs/Java万岁/Java-基础不牢地动山摇/理解各种内部类和枚举类.md)
-  * [理解克隆与序列化应用](docs/Java万岁/Java-基础不牢地动山摇/理解克隆与序列化应用.md)
+  * [理解基本数据类型与包装类](docs/Java核心基础/Java-基础不牢地动山摇/理解基本数据类型与包装类.md)
+  * [理解Java关键字](docs/Java核心基础/Java-基础不牢地动山摇/理解Java关键字.md)
+  * [理解String字符串](docs/Java核心基础/Java-基础不牢地动山摇/理解String字符串.md)
+  * [理解类与Object](docs/Java核心基础/Java-基础不牢地动山摇/理解类与Object.md)
+  * [理解泛型与迭代器](docs/Java核心基础/Java-基础不牢地动山摇/理解泛型与迭代器.md)
+  * [理解异常处理](docs/Java核心基础/Java-基础不牢地动山摇/理解异常处理.md)
+  * [理解动态代理](docs/Java核心基础/Java-基础不牢地动山摇/理解动态代理.md)
+  * [理解内部类与枚举类](docs/Java核心基础/Java-基础不牢地动山摇/理解各种内部类和枚举类.md)
+  * [理解抽象类与接口](docs/Java核心基础/Java-基础不牢地动山摇/理解抽象类与接口.md)
+  * [理解数据结构队列](docs/Java核心基础/Java-基础不牢地动山摇/理解数据结构队列.md)
+  * [理解克隆与序列化应用](docs/Java核心基础/Java-基础不牢地动山摇/理解克隆与序列化应用.md)
   * ...
  
 * Java集合
-  * [理解集合Collection](docs/Java万岁/Java-基础不牢地动山摇/理解集合Collection.md)
-  * [理解集合Map](docs/Java万岁/Java-基础不牢地动山摇/理解集合Map.md)
-  * [理解HashMap底层实现原理](docs/Java万岁/Java-基础不牢地动山摇/理解HashMap底层实现原理.md)
-  * [理解HashMap为什么是线程不安全的](docs/Java万岁/Java-基础不牢地动山摇/理解HashMap为什么是线程不安全的.md)
-  * [理解ConcurrentHashMap底层实现原理](docs/Java万岁/Java-基础不牢地动山摇/理解ConcurrentHashMap底层实现原理.md)
+  * [理解集合Collection](docs/Java核心基础/Java-基础不牢地动山摇/理解集合Collection.md)
+  * [理解集合Map](docs/Java核心基础/Java-基础不牢地动山摇/理解集合Map.md)
+  * [理解HashMap底层实现原理](docs/Java核心基础/Java-基础不牢地动山摇/理解HashMap底层实现原理.md)
+  * [理解HashMap为什么是线程不安全的](docs/Java核心基础/Java-基础不牢地动山摇/理解HashMap为什么是线程不安全的.md)
+  * [理解ConcurrentHashMap底层实现原理](docs/Java核心基础/Java-基础不牢地动山摇/理解ConcurrentHashMap底层实现原理.md)
   * ...
   
 * Java源码分析
@@ -50,11 +50,11 @@
   * ...
   
 * JVM虚拟机
-  * [垃圾回收器](docs/JVM/垃圾回收器.md)
-  * [垃圾回收算法](docs/JVM/垃圾回收算法.md)
-  * [类加载机制](docs/JVM/类加载机制.md)
-  * [Java运行时内存划分](docs/JVM/Java运行时内存划分.md)
-  * [JVM确认可回收对象的方式](docs/JVM/JVM确认可回收对象的方式.md)
+  * [理解垃圾回收器](docs/JVM/垃圾回收器.md)
+  * [理解垃圾回收算法](docs/JVM/垃圾回收算法.md)
+  * [理解类加载机制](docs/JVM/类加载机制.md)
+  * [理解Java运行时内存划分](docs/JVM/Java运行时内存划分.md)
+  * [理解JVM确认可回收对象的方式](docs/JVM/JVM确认可回收对象的方式.md)
   * ...
 
 * MySQL数据库

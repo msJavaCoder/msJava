@@ -1,12 +1,6 @@
 ## SpringMVC
 
-### Spring MVC 介绍
-
-Spring MVC（Spring Web MVC）是 Spring Framework 提供的 Web 组件，它的实现基于 MVC 的设计模式：Controller（控制层）、Model（模型层）、View（视图层），提供了前端路由映射、视图解析等功能，让 Java Web 开发变得更加简单，也属于 Java 开发中必须要掌握的热门框架。
-
-### 执行流程
-
-Spring MVC 的执行流程如下：
+### Spring MVC 的执行流程
 
 1. 客户端发送请求至前端控制器（DispatcherServlet）
 2. 前端控制器根据请求路径，进入对应的处理器
@@ -33,93 +27,6 @@ Spring MVC 的核心组件如下列表所示：
 6. **HandlerAdapter**：处理器适配器，Handler 执行业务方法之前，需要进行一系列的操作包括表单数据的验证、数据类型的转换、将表单数据封装到 POJO 等，这一系列的操作，都是由 HandlerAdapter 来完成，DispatcherServlet 通过 HandlerAdapter 执行不同的 Handler。
 7. **ModelAndView**：装载了模型数据和视图信息，作为 Handler 的处理结果，返回给 DispatcherServlet。
 8. **ViewResolver**：视图解析器，DispatcherServlet 通过它将逻辑视图解析成物理视图，最终将渲染结果响应给客户端。
-
-### 自动类型转换
-
-自动类型转换指的是，Spring MVC 可以将表单中的字段，自动映射到实体类的对应属性上，请参考以下示例。
-
-#### 1. JSP 页面代码
-
-```html
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<body>
-<form action="add">
-    名称：<input type="input" name="name"><br>
-    年龄：<input type="input" name="age"><br>
-    <input type="submit" value=" 提交 ">
-</form>
-</body>
-</html>
-```
-
-#### 2. 编写实体类
-
-```java
-public class PersonDTO {
-    private String name;
-    private int age;
-
-    public String getName() {
-        return name;
-    }
-    public void setName(String name) {
-        this.name = name;
-    }
-    public int getAge() {
-        return age;
-    }
-    public void setAge(int age) {
-        this.age = age;
-    }
-}
-```
-
-#### 3. 编写控制器
-
-```java
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-@RestController
-public class PersonController {
-    @RequestMapping(value = "/add", produces = "text/plain;charset=utf-8")
-    public String add(PersonVO person) {
-        return person.getName() + ":" + person.getAge();
-    }
-}
-```
-
-#### 4. 执行结果
-
-执行结果如下图所示：
-
-![2](https://images.gitbook.cn/dd1a0a40-d9da-11e9-970d-b51140896651)
-
-#### 中文乱码处理
-
-业务的操作过程中可能会出现中文乱码的情况，以下是处理中文乱码的解决方案。
-第一步，在 web.xml 添加编码过滤器，配置如下：
-
-```xml
-<filter>
-    <filter-name>encodingFilter</filter-name>
-    <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
-    <init-param>
-        <param-name>encoding</param-name>
-        <param-value>UTF-8</param-value>
-    </init-param>
-</filter>
-<filter-mapping>
-    <filter-name>encodingFilter</filter-name>
-    <url-pattern>/*</url-pattern>
-</filter-mapping>
-```
-
-第二步，设置 RequestMapping 的 produces 属性，指定返回值类型和编码，如下所示：
-
-```java
-@RequestMapping(value  = "/add", produces = "text/plain;charset=utf-8")
-```
 
 ### 拦截器
 
@@ -511,6 +418,3 @@ public class HomeController{
 }
 ```
 
-### 总结
-
-本文我们了解了 Spring MVC 运行的 8 个步骤和它的 8 大核心组件，也尝试了 Spring MVC 方面的类型转换，可将表单自动转换为实体对象，也使用 Hibernate 的验证功能优雅地实现了参数的验证，还可以通过配置和实现 HandlerInterceptor 接口来自定义拦截器，相信有了这些知识，可以帮助我们更高效地开发 Web 和接口项目。

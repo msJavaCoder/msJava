@@ -60,7 +60,7 @@ D：truncate table t
 
 答：D
 
-题目解析：truncate 清除表数据不会写日志，delete 要写日志，因此 truncate 的效率要高于 delete。
+> 题目解析：truncate 清除表数据不会写日志，delete 要写日志，因此 truncate 的效率要高于 delete。
 
 #### 10.唯一索引和普通索引哪个性能更好？
 
