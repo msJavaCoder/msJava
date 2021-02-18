@@ -1,4 +1,4 @@
-package com.imood.msjava.leetcode;
+package com.imood.msjava.leetcode.双指针解法;
 
 
 

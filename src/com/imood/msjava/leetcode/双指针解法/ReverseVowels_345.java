@@ -1,4 +1,4 @@
-package com.imood.msjava.leetcode;
+package com.imood.msjava.leetcode.双指针解法;
 
 import java.util.Arrays;
 import java.util.HashSet;
@@ -28,6 +28,7 @@ public class ReverseVowels_345 {
             } else if (!vowels.contains(highChar)) {
                 result[high--] = highChar;
             } else {
+                // 交互
                 result[low++] = highChar;
                 result[high--] = lowChar;
             }
