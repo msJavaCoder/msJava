@@ -5,7 +5,7 @@ package com.imood.msjava.leetcode;
  * @author: 微信公众号：码上Java
  * @createDate: 2020/7/29/0029
  */
-public class judgeSquareSum_633 {
+public class JudgeSquareSum_633 {
 
     /**
      * 题目描述：判断一个非负整数是否为两个整数的平方和。
