@@ -29,7 +29,6 @@ public class JudgeSquareSum_633 {
         int high = (int) Math.sqrt(target);
 
         while (low <= high) {
-
             int powSum = low * low + high * high;
             if (powSum == target) {
                 return true;

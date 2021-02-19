@@ -1,11 +1,10 @@
-package com.imood.msjava;
+package com.imood.msjava.leetcode;
 
 import java.util.Arrays;
-import java.util.HashSet;
 
 /**
  * @author msJava
- * @Description: todo
+ * @Description: 存在重复元素
  */
 public class ContainsDuplicate {
 

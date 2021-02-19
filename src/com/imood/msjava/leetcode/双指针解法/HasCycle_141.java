@@ -4,6 +4,7 @@ package com.imood.msjava.leetcode.双指针解法;
 /**
  * @author msJava
  * @Description: 给定一个链表，判断链表中是否有环。
+ *    思路： 使用快慢双指针，链表中存在环的话，双指针必定会相遇
  */
 public class HasCycle_141 {
 
