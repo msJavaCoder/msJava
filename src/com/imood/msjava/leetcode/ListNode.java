@@ -6,8 +6,8 @@ package com.imood.msjava.leetcode;
  * @createDate: 2020/7/2/0002
  */
 public class ListNode {
-    int val;
-    ListNode next;
+    public int val;
+    public ListNode next;
 
     public ListNode(int val) {
         this.val = val;
