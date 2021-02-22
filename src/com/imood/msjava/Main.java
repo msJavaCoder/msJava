@@ -8,6 +8,8 @@ package com.imood.msjava;
  */
 public class Main {
 
+
+
     /**
      * 交换位置
      *
@@ -42,6 +44,14 @@ public class Main {
 
 
     public static void main(String[] args) {
-        System.out.println(3 * 0.1);
+
+        int n=000000000000000000000000000010110;
+
+        String s = String.valueOf(n);
+        System.out.println(s);
+
+
+
+
     }
 }

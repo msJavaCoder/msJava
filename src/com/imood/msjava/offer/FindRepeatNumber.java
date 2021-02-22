@@ -16,6 +16,7 @@ public class FindRepeatNumber {
                 return nums[i];
             }
         }
+
         return -1;
     }
 }
