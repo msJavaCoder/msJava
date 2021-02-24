@@ -128,41 +128,41 @@ public class Sort {
 
     /**
      * 快速排序算法 时间复杂度 NlogN 空间复杂度 logN 不稳定
-     *
+     *       双边循环实现方式   递归
      * @param array
-     * @param low
-     * @param high
+     * @param right
+     * @param left
      * @return
      */
-    public static int[] quickSort(int[] array, int low, int high) {
-        if (low < high) {
-            int index = partition(array, low, high);
+    public static int[] quickSort(int[] array, int left, int right) {
+        if (left < right) {
+            int index = partition(array, left, right);
             quickSort(array, 0, index - 1);
-            quickSort(array, index + 1, high);
+            quickSort(array, index + 1, right);
         }
         return array;
     }
 
     //快速排序分区操作
-    private static int partition(int[] array, int low, int high) {
+    private static int partition(int[] array, int left, int right) {
         //1.找一个基准值
-        int pivot = array[low];
+        int pivot = array[left];
         //2.当low 小于 high 重复操作
-        while (low < high) {
-            while (low < high && array[high] >= pivot) {
-                high--;
+        while (left < right) {
+            while (left < right && array[right] >= pivot) {
+                right--;
             }
-            array[low] = array[high];
+            array[left] = array[right];
             //从low开始，如果low小于pivot, low++ ,否则 low 的值直接赋值给 high
-            while ((low < high) && array[low] <= pivot) {
-                low++;
+            while ((left < right) && array[left] <= pivot) {
+                left++;
             }
-            array[high] = array[low];
+            array[right] = array[left];
         }
         //3.最后基准值
-        array[low] = pivot;
+        array[left] = pivot;
         //4.返回基准值位置
-        return low;
+        return left;
     }
 
     /**
