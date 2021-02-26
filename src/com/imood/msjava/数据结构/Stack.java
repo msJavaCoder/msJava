@@ -23,7 +23,7 @@ public class Stack<E> {
     }
 
     // 初始化构造方法 默认栈容量为10
-    Stack() {
+    public Stack() {
         this(10);
     }
 
