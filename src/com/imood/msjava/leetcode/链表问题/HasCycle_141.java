@@ -1,4 +1,6 @@
-package com.imood.msjava.leetcode;
+package com.imood.msjava.leetcode.链表问题;
+
+import com.imood.msjava.leetcode.ListNode;
 
 /**
  * @description:判断链表是否存在环

@@ -1,4 +1,6 @@
-package com.imood.msjava.leetcode;
+package com.imood.msjava.leetcode.链表问题;
+
+import com.imood.msjava.leetcode.ListNode;
 
 /**
  * @description:归并两个有序的链表
