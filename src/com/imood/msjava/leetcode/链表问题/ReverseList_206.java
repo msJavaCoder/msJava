@@ -15,20 +15,20 @@ public class ReverseList_206 {
      * @param head
      * @return
      */
-    public ListNode reverseList(ListNode head) {
+    public ListNode reverseList_01(ListNode head) {
 
         if (head == null || head.next == null) {
             return head;
         }
         ListNode next = head.next;
-        ListNode newHead = reverseList(next);
+        ListNode newHead = reverseList_01(next);
         next.next = head;
         head.next = null;
         return newHead;
     }
 
 
-    public ListNode reverseListNew(ListNode head) {
+    public ListNode reverseList_02(ListNode head) {
         ListNode first = head;
         ListNode reverseHead = null; //建立一个新的节点用来存放结果
         while (first != null) { //遍历输入链表，开始处理每一个节点
