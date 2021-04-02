@@ -50,11 +50,11 @@
 
   
 * JVM虚拟机
-  * [理解垃圾回收器](docs/JVM/垃圾回收器.md)
-  * [理解垃圾回收算法](docs/JVM/垃圾回收算法.md)
-  * [理解类加载机制](docs/JVM/类加载机制.md)
-  * [理解Java运行时内存划分](docs/JVM/Java运行时内存划分.md)
-  * [理解JVM确认可回收对象的方式](docs/JVM/JVM确认可回收对象的方式.md)
+  * [理解垃圾回收器](docs/JVM虚拟机/垃圾回收器.md)
+  * [理解垃圾回收算法](docs/JVM虚拟机/垃圾回收算法.md)
+  * [理解类加载机制](docs/JVM虚拟机/类加载机制.md)
+  * [理解Java运行时内存划分](docs/JVM虚拟机/Java运行时内存划分.md)
+  * [理解JVM确认可回收对象的方式](docs/JVM虚拟机/JVM确认可回收对象的方式.md)
 
 
 * MySQL数据库
