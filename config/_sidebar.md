@@ -1,5 +1,6 @@
 * 计算机基础
     * [**计算机网络**](docs/计算机网络/README.md)
+    * [**操作系统**](docs/计算机网络/README.md)
     * [**设计模式**](docs/设计模式/README.md)
   
 * Java
@@ -7,10 +8,12 @@
     * [**Java源码分析**](docs/Java源码分析/README.md)
     * [**Java性能优化**](docs/Java性能优化/README.md)
     * [**Java并发编程**](docs/Java并发编程/README.md)
-    * [**JVM虚拟机**](docs/JVM虚拟机/README.md)
+    * [**Java虚拟机**](docs/JVM虚拟机/README.md)
     
 * 数据结构与算法
-    * [算法](docs/算法/README.md)
+    * [算法](docs/算法/常用算法.md)
+    * [数据结构](docs/算法/常用算法.md)
+    * [剑指offer](docs/算法/剑指offer题解.md)
     
 * 数据库
     * [**MySQL**](docs/MySQL/README.md)
@@ -21,4 +24,7 @@
     * MyBatis
     * [**SpringBoot**](docs/SpringBoot/README.md)
     * SpringCloud
+    
+* 面试题
+    
 
