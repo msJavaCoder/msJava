@@ -25,8 +25,10 @@
     subMaxLevel: 5,  // 最大支持渲染的子标题层级   
     homepage: "README.md",
     coverpage: true,  //开启封面
-    loadSidebar: true,  //开启侧边栏
+    loadSidebar:true,/* 加载自定义的侧边栏，默认加载_sidebar.md，加载别的文件把true改成“xxx.md” */
+    loadNavbar:true,/* 加载自定义的导航栏，默认加载_navbar.md，加载别的文件把true改成“xxx.md” */
     auto2top: true,//切换页面后是否自动跳转到页面顶部
+    mergeNavbar: true,/* 小屏设备下合并导航栏到侧边栏 */
     search: {
       //maxAge: 86400000, // 过期时间，单位毫秒，默认一天
       paths: 'auto',
