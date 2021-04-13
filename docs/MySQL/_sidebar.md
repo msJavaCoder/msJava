@@ -1,4 +1,4 @@
-* **MySQL**
+* **👉 MySQL** [🔙 ](/README)
   * [MySQL基础概念](docs/MySQL/MySQL基础概念.md)
   * [常见SQL优化方式](docs/MySQL/常见SQL优化方式.md)
   * [浅谈MySQL的优化方案](docs/MySQL/浅谈MySQL的优化方案.md)
