@@ -29,6 +29,7 @@
     loadNavbar:true,/* 加载自定义的导航栏，默认加载_navbar.md，加载别的文件把true改成“xxx.md” */
     auto2top: true,//切换页面后是否自动跳转到页面顶部
     mergeNavbar: true,/* 小屏设备下合并导航栏到侧边栏 */
+    disqus: 'shortname',
     search: {
       //maxAge: 86400000, // 过期时间，单位毫秒，默认一天
       paths: 'auto',
@@ -68,5 +69,8 @@
 <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
 <!-- 表情 -->
 <script src="//unpkg.com/docsify/lib/plugins/emoji.js"></script>
+<!--评论-->
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/disqus.min.js"></script>
+
 </body>
 </html>
