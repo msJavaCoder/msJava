@@ -12,7 +12,7 @@
 ![license-GPL](https://img.shields.io/badge/license-GPL-blue.svg)
 
 ---
-![GWZrS.png](https://s.im5i.com/2021/04/14/GWZrS.png)
+           ![GWcLz.png](https://s.im5i.com/2021/04/14/GWcLz.png)
 
 ---
 
