@@ -1,4 +1,4 @@
-* **👉 Java核心基础** [🔙 ](/README)
+* **👉 Java核心基础** [↩](/README)
   * [理解Java关键字](docs/Java核心基础/理解Java关键字.md)
   * [理解String字符串](docs/Java核心基础/理解String字符串.md)
   * [理解基本数据类型与包装类](docs/Java核心基础/理解基本数据类型与包装类.md)
