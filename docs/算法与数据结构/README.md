@@ -1,0 +1,1 @@
+![GRHeq.png](https://s.im5i.com/2021/04/15/GRHeq.png)
