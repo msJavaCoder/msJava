@@ -1,6 +1,6 @@
 ![logo](https://docsify.js.org/_media/icon.svg)
 
-<h1 align="center">Java后端开发面试核心知识体系</h1>
+<h1 align="center">Java后端核心知识体系</h1>
 <h2>There is only one me in this world 😀</h2>
 
 ![QQ群](https://img.shields.io/badge/QQ%E7%BE%A4-660108379-yellowgreen.svg)
