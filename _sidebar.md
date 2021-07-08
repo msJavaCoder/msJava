@@ -13,11 +13,7 @@
 
 *    [**🈳 算法与数据结构**](docs/算法与数据结构/README.md)
 
----
-
-*    [**📚 数据库**](docs/MySQL/README.md)
-   
-
+  
 ---
 
 *    [**🐧 Java核心基础**](docs/Java核心基础/README.md)
@@ -45,6 +41,14 @@
 ---
 
 *    **🈳 SpringCloud**
+
+---
+
+*    [**📚 MySQL**](docs/MySQL/README.md)
+
+---
+
+*    [**🈳 Redis**](docs/Redis/README.md)
 
 
 ---

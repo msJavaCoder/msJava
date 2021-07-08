@@ -9,20 +9,19 @@
    * Spring
    * SpringMVC
    * MyBatis
-   * SpringData JPA
-   * Spring Security
    * [SpringBoot](docs/SpringBoot/README.md)
    * SpringCloud
  
  * 数据库
    * [MySQL](docs/MySQL/README.md) 
-   * Redis
+   * [Redis](docs/Redis/README.md) 
+
    
    
  * 数据结构与算法
-   * 排序算法  
-   * 数据结构
-   * [剑指offer](docs/算法/剑指offer题解.md)  
+   * [排序算法](docs/算法与数据结构/排序算法.md)  
+   * [数据结构](docs/算法与数据结构/README.md)  
+   * [剑指offer](docs/算法与数据结构/剑指offer题解.md)  
    
  * 计算机基础
    * 操作系统
