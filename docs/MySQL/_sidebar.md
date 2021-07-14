@@ -7,6 +7,6 @@
   * [什么时候不需要创建索引](docs/MySQL/什么时候不需要创建索引.md)
   * [什么情况下索引失效](docs/MySQL/什么情况下索引失效.md)
   * [Hash索引与B+树索引的区别](docs/MySQL/Hash索引与B+树索引的区别.md)
-  * [B树与B+树详谈](docs/MySQL/树详谈.md)
+  * [B树与B+树详谈](docs/MySQL/B树与B+树详谈.md)
   * [SQL经典笔试题目](docs/MySQL/SQL经典笔试题目.md)
   * [SQL进阶](docs/MySQL/SQL进阶.md)
