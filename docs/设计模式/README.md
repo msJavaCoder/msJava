@@ -1,4 +1,2 @@
-#  设计模式
-  * [理解单例模式](docs/设计模式/单例模式.md)
-  * [设计模式六大设计原则](docs/设计模式/设计模式六大设计原则.md)
- 
+
+![](https://cdn.jsdelivr.net/gh/msJavaCoder/msJava@master/image/设计模式思维导图.png)

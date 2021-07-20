@@ -9,29 +9,92 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/pure.css">
+  <!-- 谷歌站点收录 -->
+  <meta name="google-site-verification" content="qTFCf1hJ275saQ7H1kin5t2DVpznBKAj0Gi50XMOVMo" />
+  <!-- 百度站点收录-->
+  <meta name="baidu-site-verification" content="SZyWUIzWiU" />
 
+  <style>
+    /*侧边栏*/
+    .sidebar {
+      padding-top: 6px;
+    }
+    @media (max-width:600px) {
+      pre {
+        padding-left: 3px !important;
+        padding-right: 3px !important;
+        margin-left: -20px !important;
+        margin-right: -20px !important;
+        box-shadow: 0px 0px 20px 0px #f7f7f7 !important;
+      }
+
+      /*代码块复制按钮默认隐藏*/
+      .docsify-copy-code-button {
+        display: none;
+      }
+
+      .advertisement{
+        display: none;
+      }
+
+    }
+
+    .advertisement {
+      position: fixed;
+      right: 20px;
+      top: 100px;
+      width: 110px;
+      box-shadow: -1px 0 2px 0px #c5ebda;
+      padding: 10px;
+      z-index: 99;
+      background-color: #fff;
+      text-align: center;
+    }
+
+    .advertisement p,
+    h4 {
+      margin: 0;
+      padding: 0;
+    }
+
+    .advertisement .Tencent_code h4 {
+      font-size: 15px;
+      color: #25a46a;
+      margin-bottom: 10px;
+    }
+
+  </style>
 </head>
 <body>
-<div id="app"></div>
+<div id="app">‍🏃 ‍💨 嘟嘟嘟 疯狂 加载中...</div>
+<div class="aside_container">
+  <div class="advertisement">
+    <div class="Tencent_code">
+      <h4>关注作者公众号</h4>
+      <p style="font-size: 12px;">一起进步,一起成为更好的自己~</p>
+      <img src="https://cdn.jsdelivr.net/gh/msJavaCoder/msJava@master/image/公众号二维码.jpg" alt="EnjoyToShare" />
+    </div>
+  </div>
+</div>
+
 <script>
   // 离线支持
   if (typeof navigator.serviceWorker !== 'undefined') {
     navigator.serviceWorker.register('sw.js')
   }
 
-
-
   window.$docsify = {
     name: '🔥 码上Java',
     repo: 'https://github.com/msJavaCoder/msJava',
     maxLevel: 5,//最大支持渲染的标题层级+Z   z--
-    subMaxLevel: 5,  // 最大支持渲染的子标题层级   
+    subMaxLevel: 5,  // 最大支持渲染的子标题层级
     homepage: "README.md",
     coverpage: true,  //开启封面
     loadSidebar:true,/* 加载自定义的侧边栏，默认加载_sidebar.md，加载别的文件把true改成“xxx.md” */
     loadNavbar:true,/* 加载自定义的导航栏，默认加载_navbar.md，加载别的文件把true改成“xxx.md” */
     auto2top: true,//切换页面后是否自动跳转到页面顶部
     mergeNavbar: true,/* 小屏设备下合并导航栏到侧边栏 */
+    externalLinkTarget: '_blank', //外链打开方式：_blank表示在新标签页中打开
     disqus: 'shortname',
     search: {
       //maxAge: 86400000, // 过期时间，单位毫秒，默认一天
@@ -44,7 +107,6 @@
       previousText: '上一章',
       nextText: '下一章',
     },
-
   }
 </script>
 
@@ -58,24 +120,87 @@
 <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
 <!-- 全文搜索-->
 <script src="https://cdn.bootcss.com/docsify/4.5.9/plugins/search.min.js"></script>
-<!-- 复制到剪贴板 -->
-<script src="//unpkg.com/docsify-copy-code"></script>
+
 <!-- 图片缩放 -->
 <script src="//unpkg.com/docsify/lib/plugins/zoom-image.js"></script>
 <!--Java代码高亮-->
 <script src="//unpkg.com/prismjs/components/prism-java.js"></script>
+<script src="//unpkg.com/prismjs/components/prism-sql.js"></script>
+<script src="//unpkg.com/prismjs/components/prism-bash.js"></script>
 <!--分页插件-->
 <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
-<!--统计访问量插件-->
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 <!-- 字数统计 -->
 <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
 <!-- 表情 -->
 <script src="//unpkg.com/docsify/lib/plugins/emoji.js"></script>
 <!--评论-->
 <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/disqus.min.js"></script>
-
+<!-- 复制到剪贴板 -->
+<!--<script src="//unpkg.com/docsify-copy-code"></script>-->
+<script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
 <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
 <script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
+
+<script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script>
+<!--//  小帅哥： https://unpkg.com/live2d-widget-model-chitose@1.0.5/assets/chitose.model.json-->
+<!--//  萌娘：https://unpkg.com/live2d-widget-model-shizuku@1.0.5/assets/shizuku.model.json-->
+<!--//  小可爱（女）：https://unpkg.com/live2d-widget-model-koharu@1.0.5/assets/koharu.model.json-->
+<!--//  小可爱（男）：https://unpkg.com/live2d-widget-model-haruto@1.0.5/assets/haruto.model.json-->
+<!--//  初音：https://unpkg.com/live2d-widget-model-miku@1.0.5/assets/miku.model.json-->
+
+<script>
+  L2Dwidget.init({
+    "model": {
+      //jsonpath控制显示那个小萝莉模型，
+      //(切换模型需要改动)
+      // 小可爱（女）
+      jsonPath: "https://unpkg.com/live2d-widget-model-koharu@1.0.5/assets/koharu.model.json",
+      // 小可爱（男）
+      // jsonPath: "https://unpkg.com/live2d-widget-model-haruto@1.0.5/assets/haruto.model.json",
+      //萌娘
+      // jsonPath: "https://unpkg.com/live2d-widget-model-shizuku@1.0.5/assets/shizuku.model.json",
+      // 小帅哥
+      // jsonPath: "https://unpkg.com/live2d-widget-model-chitose@1.0.5/assets/chitose.model.json",
+      // 初音
+      // jsonPath: "https://unpkg.com/live2d-widget-model-miku@1.0.5/assets/miku.model.json",
+      "scale": 1
+    },
+    "display": {
+      "position": "right", //看板娘的表现位置
+      "width": 100,  //小萝莉的宽度
+      "height": 200, //小萝莉的高度
+      "hOffset": 35,
+      "vOffset": -20
+    },
+    "mobile": {
+      "show": true,
+      "scale": 0.5
+    },
+    "react": {
+      "opacityDefault": 0.7,
+      "opacityOnHover": 0.2
+    }
+  });
+</script>
+<!-- 回到顶部功能 -->
+<script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/jquery.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/jquery.goup.js"></script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    $.goup({
+      trigger: 100,
+      bottomOffset: 52,
+      locationOffset: 25,
+      //title: 'TOP',
+      titleAsText: true
+    });
+  });
+</script>
+<!-- 谷歌分析 -->
+<script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/ga.min.js"></script>
+<!-- mouse click -->
+<script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/click_heart.js"></script>
+<!-- 添加页脚 -->
+<script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/docsify-footer-enh.min.js"></script>
 </body>
 </html>

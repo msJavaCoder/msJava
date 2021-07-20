@@ -8,7 +8,6 @@
 ![version-v2.0.0](https://img.shields.io/badge/version-v2.0.0-green.svg)
 ![license-GPL](https://img.shields.io/badge/license-GPL-blue.svg)
 
-
 [GitHub](https://github.com/msJavaCoder/msJava)
 [开始阅读](#🔥-微信公众号-：-码上java)
 
