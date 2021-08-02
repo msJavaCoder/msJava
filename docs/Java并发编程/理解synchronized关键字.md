@@ -1,4 +1,4 @@
-# synchronized关键字原理
+# 👉 synchronized关键字原理
 
 众所周知 `synchronized` 关键字是解决并发问题常用解决方案，有以下三种使用方式:
 

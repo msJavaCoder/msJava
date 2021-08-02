@@ -1,4 +1,4 @@
-# 基于`SpringBoot`集成`Mybatis-Plus`实现代码生成器
+# 👉 基于`SpringBoot`集成`Mybatis-Plus`实现代码生成器
 
 ## 1. 引入所需依赖
 

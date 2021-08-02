@@ -1,4 +1,4 @@
-## HashSet与TreeSet 
+# 👉 HashSet与TreeSet 
 
 HashSet、TreeSet 两个类是在 Map 的基础上组装起来的类，我们学习的侧重点，主要在于 Set 是如何利用 Map 现有的功能，来达成自己的目标的，也就是说如何基于现有的功能进行创新，然后再看看一些改变的小细节是否值得我们学习。
 

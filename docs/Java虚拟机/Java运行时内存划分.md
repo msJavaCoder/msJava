@@ -1,4 +1,4 @@
-# JVM的内存区域
+# 👉 JVM的内存区域
 
 <img src="https://s.im5i.com/2021/04/15/Gwa4q.png" alt="Gwa4q.png" style="zoom: 50%;" />
 
