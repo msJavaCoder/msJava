@@ -1,4 +1,4 @@
-## 理解ThreadLocal
+# 👉 理解ThreadLocal
 
 **什么是 ThreadLocal？**
 ThreadLocal 诞生于 JDK 1.2，用于解决多线程间的数据隔离问题。也就是说 ThreadLocal 会为每一个线程创建一个单独的变量副本。

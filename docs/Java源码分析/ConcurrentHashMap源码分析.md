@@ -1,4 +1,4 @@
-## ConcurrentHashMap源码分析
+# 👉 ConcurrentHashMap源码分析
 
 当我们碰到线程不安全场景下，需要使用 Map 的时候，我们第一个想到的 API 估计就是 ConcurrentHashMap，ConcurrentHashMap 内部封装了锁和各种数据结构来保证访问 Map 是线程安全的，接下来我们一一来看下，和 HashMap 相比，多了哪些数据结构，又是如何保证线程安全的。
 
