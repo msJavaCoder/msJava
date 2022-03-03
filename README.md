@@ -12,7 +12,7 @@
 ![license-GPL](https://img.shields.io/badge/license-GPL-blue.svg)
 
 ---
-![GWcLz.png](https://s.im5i.com/2021/04/14/GWcLz.png)
+![ms-Java.webp](https://cdn.jsdelivr.net/gh/msJavaCoder/msJava@master/image/ms-Java.webp)
 
 ---
 
