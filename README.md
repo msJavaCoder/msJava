@@ -12,7 +12,7 @@
 ![license-GPL](https://img.shields.io/badge/license-GPL-blue.svg)
 
 ---
-![ms-Java.webp](https://cdn.jsdelivr.net/gh/msJavaCoder/msJava@master/image/ms-Java.webp)
+![ms-Java.webp](https://cdn.jsdelivr.net/gh/msJavaCoder/msJava@master/image/码上Java.webp)
 
 ---
 
