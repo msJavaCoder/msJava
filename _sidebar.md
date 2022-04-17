@@ -1,12 +1,3 @@
-  
-*    [**💻 计算机网络**](docs/计算机网络/README.md)
-
----
-
-*    **🐧 计算机操作系统**
-
-
----
 
 *    [**📕 数据结构与算法**](docs/算法与数据结构/README.md)
 
@@ -18,10 +9,6 @@
 ---
 
 *    [**🙈 Java源码分析**](docs/Java源码分析/README.md)
-
----
-
-*    [**🐶 Java性能优化**](docs/Java性能优化/README.md)
 
 ---
 
@@ -42,7 +29,7 @@
 
 ---
 
-*    [**🌀 Redis**](docs/Redis/README.md)
+*    **🌀 Redis**
 
 
 ---
